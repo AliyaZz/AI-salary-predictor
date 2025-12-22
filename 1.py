@@ -10,7 +10,7 @@ from PySide6.QtWidgets import (
     QPushButton, QLabel, QTabWidget, QLineEdit, QComboBox, QSlider,
     QTextEdit, QFileDialog, QMessageBox, QFrame, QStyleFactory, QSizePolicy,
     QGroupBox, QTableWidget, QTableWidgetItem, QHeaderView, QSpinBox,
-    QDoubleSpinBox, QProgressBar
+    QDoubleSpinBox, QProgressBar, QScrollArea
 )
 from PySide6.QtCore import Qt, QThread, Signal, QTimer
 from PySide6.QtGui import QPainter, QColor, QFont, QIcon
@@ -470,6 +470,13 @@ class SalaryPredictorApp(QMainWindow):
                 border-top: 2px solid #667eea;
                 font-weight: 500;
             }
+            QScrollArea {
+                border: none;
+                background-color: transparent;
+            }
+            QScrollArea > QWidget > QWidget {
+                background-color: transparent;
+            }
         """
         self.setStyleSheet(dark_stylesheet)
 
@@ -593,10 +600,18 @@ class SalaryPredictorApp(QMainWindow):
 
         main_layout = QHBoxLayout(self.data_tab)
 
-        # Левая панель - управление данными
+        # Левая панель - управление данными (с прокруткой)
+        left_scroll = QScrollArea()
+        left_scroll.setWidgetResizable(True)
+        left_scroll.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
+        left_scroll.setVerticalScrollBarPolicy(Qt.ScrollBarAsNeeded)
+        left_scroll.setFixedWidth(370)
+
         left_panel = QWidget()
         left_panel.setFixedWidth(350)
         left_layout = QVBoxLayout(left_panel)
+        left_layout.setSpacing(15)
+        left_layout.setContentsMargins(10, 10, 10, 10)
 
         # Группа загрузки данных
         load_group = QGroupBox("📂 Загрузка Данных")
@@ -663,24 +678,29 @@ class SalaryPredictorApp(QMainWindow):
         left_layout.addWidget(info_group)
 
         left_layout.addStretch()
-        main_layout.addWidget(left_panel)
+        left_scroll.setWidget(left_panel)
+        main_layout.addWidget(left_scroll)
 
-        # Правая панель - просмотр данных
+        # Правая панель - просмотр данных (с правильным layout)
         right_panel = QWidget()
         right_layout = QVBoxLayout(right_panel)
+        right_layout.setSpacing(10)
+        right_layout.setContentsMargins(5, 5, 5, 5)
 
-        # Таблица данных
+        # Таблица данных (внутри скроллируемой области)
         self.data_table = QTableWidget()
         self.data_table.setAlternatingRowColors(True)
         self.data_table.setSelectionBehavior(QTableWidget.SelectRows)
         self.data_table.setEditTriggers(QTableWidget.NoEditTriggers)
         self.data_table.horizontalHeader().setStretchLastSection(True)
+        self.data_table.verticalHeader().setVisible(True)
 
-        right_layout.addWidget(self.data_table)
+        right_layout.addWidget(self.data_table, stretch=1)
 
         # Панель управления таблицей
         table_control_panel = QWidget()
         table_control_layout = QHBoxLayout(table_control_panel)
+        table_control_layout.setContentsMargins(5, 5, 5, 5)
 
         self.rows_label = QLabel("Показано записей: 0")
         table_control_layout.addWidget(self.rows_label)
@@ -697,7 +717,7 @@ class SalaryPredictorApp(QMainWindow):
 
         right_layout.addWidget(table_control_panel)
 
-        main_layout.addWidget(right_panel)
+        main_layout.addWidget(right_panel, stretch=1)
 
     def load_salary_data(self):
         """Загрузка данных из файла"""
@@ -928,8 +948,8 @@ class SalaryPredictorApp(QMainWindow):
         # Вычисление корреляционной матрицы
         corr_matrix = self.salary_data[numeric_cols].corr()
 
-        # Создание графика
-        fig = Figure(figsize=(12, 10))
+        # Создание графика с увеличенным размером для лучшей читаемости
+        fig = Figure(figsize=(16, 14))
         ax = fig.add_subplot(111)
 
         # Heatmap корреляций с красивой цветовой схемой
@@ -943,17 +963,28 @@ class SalaryPredictorApp(QMainWindow):
                     cbar_kws={"shrink": .8, "label": "Корреляция"})
 
         ax.set_title("Корреляционная матрица числовых признаков",
-                     fontsize=18, pad=20, color='#ffffff', weight='bold')
-        plt.xticks(rotation=45, ha='right', color='#e2e8f0')
-        plt.yticks(color='#e2e8f0')
-        plt.tight_layout()
+                     fontsize=16, pad=20, color='#ffffff', weight='bold')
+        plt.xticks(rotation=45, ha='right', color='#e2e8f0', fontsize=9)
+        plt.yticks(rotation=0, color='#e2e8f0', fontsize=9)
 
         # Применяем темную тему
         self.setup_matplotlib_style(fig)
 
-        # Встраивание графика
+        # Улучшенное размещение с большими отступами для подписей
+        fig.tight_layout(pad=4.0)
+        fig.subplots_adjust(bottom=0.15, left=0.15, right=0.95, top=0.95)
+
+        # Встраивание графика в скроллируемую область
         canvas = FigureCanvas(fig)
-        layout.addWidget(canvas)
+        canvas.setMinimumSize(800, 700)
+
+        # Создаем скроллируемую область для графика
+        scroll_area = QScrollArea()
+        scroll_area.setWidgetResizable(True)
+        scroll_area.setHorizontalScrollBarPolicy(Qt.ScrollBarAsNeeded)
+        scroll_area.setVerticalScrollBarPolicy(Qt.ScrollBarAsNeeded)
+        scroll_area.setWidget(canvas)
+        layout.addWidget(scroll_area)
 
         # Добавление текстового анализа
         text_widget = QTextEdit()
@@ -1083,10 +1114,18 @@ class SalaryPredictorApp(QMainWindow):
 
         main_layout = QHBoxLayout(self.training_tab)
 
-        # Левая панель - настройки обучения
+        # Левая панель - настройки обучения (с прокруткой)
+        left_scroll = QScrollArea()
+        left_scroll.setWidgetResizable(True)
+        left_scroll.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
+        left_scroll.setVerticalScrollBarPolicy(Qt.ScrollBarAsNeeded)
+        left_scroll.setFixedWidth(420)
+
         left_panel = QWidget()
         left_panel.setFixedWidth(400)
         left_layout = QVBoxLayout(left_panel)
+        left_layout.setSpacing(15)
+        left_layout.setContentsMargins(10, 10, 10, 10)
 
         # Группа выбора модели
         model_group = QGroupBox("🎯 Выбор Модели")
@@ -1177,34 +1216,51 @@ class SalaryPredictorApp(QMainWindow):
         left_layout.addWidget(train_group)
 
         left_layout.addStretch()
-        main_layout.addWidget(left_panel)
+        left_scroll.setWidget(left_panel)
+        main_layout.addWidget(left_scroll)
 
-        # Правая панель - результаты обучения
+        # Правая панель - результаты обучения (с прокруткой для контента)
         right_panel = QWidget()
         right_layout = QVBoxLayout(right_panel)
+        right_layout.setContentsMargins(5, 5, 5, 5)
 
         self.training_tabs = QTabWidget()
 
-        # Вкладка метрик
+        # Вкладка метрик (с прокруткой)
+        metrics_scroll = QScrollArea()
+        metrics_scroll.setWidgetResizable(True)
+        metrics_scroll.setHorizontalScrollBarPolicy(Qt.ScrollBarAsNeeded)
+        metrics_scroll.setVerticalScrollBarPolicy(Qt.ScrollBarAsNeeded)
         metrics_widget = QWidget()
         metrics_layout = QVBoxLayout(metrics_widget)
         self.metrics_text = QTextEdit()
         self.metrics_text.setReadOnly(True)
         metrics_layout.addWidget(self.metrics_text)
-        self.training_tabs.addTab(metrics_widget, "📊 Метрики")
+        metrics_scroll.setWidget(metrics_widget)
+        self.training_tabs.addTab(metrics_scroll, "📊 Метрики")
 
-        # Вкладка визуализации
+        # Вкладка визуализации (с прокруткой)
+        viz_scroll = QScrollArea()
+        viz_scroll.setWidgetResizable(True)
+        viz_scroll.setHorizontalScrollBarPolicy(Qt.ScrollBarAsNeeded)
+        viz_scroll.setVerticalScrollBarPolicy(Qt.ScrollBarAsNeeded)
         self.viz_widget = QWidget()
         self.viz_layout = QVBoxLayout(self.viz_widget)
-        self.training_tabs.addTab(self.viz_widget, "📈 Визуализация")
+        viz_scroll.setWidget(self.viz_widget)
+        self.training_tabs.addTab(viz_scroll, "📈 Визуализация")
 
-        # Вкладка сравнения моделей
+        # Вкладка сравнения моделей (с прокруткой)
+        comparison_scroll = QScrollArea()
+        comparison_scroll.setWidgetResizable(True)
+        comparison_scroll.setHorizontalScrollBarPolicy(Qt.ScrollBarAsNeeded)
+        comparison_scroll.setVerticalScrollBarPolicy(Qt.ScrollBarAsNeeded)
         comparison_widget = QWidget()
         comparison_layout = QVBoxLayout(comparison_widget)
         self.comparison_text = QTextEdit()
         self.comparison_text.setReadOnly(True)
         comparison_layout.addWidget(self.comparison_text)
-        self.training_tabs.addTab(comparison_widget, "⚖️ Сравнение")
+        comparison_scroll.setWidget(comparison_widget)
+        self.training_tabs.addTab(comparison_scroll, "⚖️ Сравнение")
 
         right_layout.addWidget(self.training_tabs)
         main_layout.addWidget(right_panel)
@@ -1521,11 +1577,12 @@ class SalaryPredictorApp(QMainWindow):
             if widget:
                 widget.setParent(None)
 
-        fig = Figure(figsize=(14, 10))
+        # Увеличенный размер фигуры для лучшего размещения всех элементов
+        fig = Figure(figsize=(14, 11))
 
         # 1. Реальные vs Предсказанные значения
         ax1 = fig.add_subplot(221)
-        ax1.scatter(y_test, y_pred, alpha=0.6, color='#2196f3', s=50)
+        ax1.scatter(y_test, y_pred, alpha=0.6, color='#2196f3', s=40)
 
         # Линия идеального предсказания
         min_val = min(min(y_test), min(y_pred))
@@ -1540,9 +1597,10 @@ class SalaryPredictorApp(QMainWindow):
 
         ax1.set_xlabel('Реальная зарплата (тыс.руб.)', fontsize=10)
         ax1.set_ylabel('Предсказанная зарплата (тыс.руб.)', fontsize=10)
-        ax1.set_title('Реальные vs Предсказанные значения', fontsize=12, fontweight='bold')
-        ax1.legend()
+        ax1.set_title('Реальные vs Предсказанные', fontsize=11, fontweight='bold', pad=10)
+        ax1.legend(loc='upper left', fontsize=8, framealpha=0.9)
         ax1.grid(True, alpha=0.3)
+        ax1.tick_params(labelsize=9)
 
         # 2. Распределение ошибок
         ax2 = fig.add_subplot(222)
@@ -1562,9 +1620,10 @@ class SalaryPredictorApp(QMainWindow):
 
         ax2.set_xlabel('Ошибка предсказания (тыс.руб.)', fontsize=10)
         ax2.set_ylabel('Частота', fontsize=10)
-        ax2.set_title('Распределение ошибок', fontsize=12, fontweight='bold')
-        ax2.legend()
+        ax2.set_title('Распределение ошибок', fontsize=11, fontweight='bold', pad=10)
+        ax2.legend(loc='upper right', fontsize=8, framealpha=0.9)
         ax2.grid(True, alpha=0.3)
+        ax2.tick_params(labelsize=9)
 
         # 3. Важность признаков (если модель поддерживает)
         if hasattr(self.salary_model, 'feature_importances_') and hasattr(self, 'feature_names'):
@@ -1572,26 +1631,39 @@ class SalaryPredictorApp(QMainWindow):
             importances = self.salary_model.feature_importances_
 
             # Сортируем по важности
-            indices = np.argsort(importances)[-15:]  # Топ-15
+            indices = np.argsort(importances)[-12:]  # Топ-12 (уменьшено для экономии места)
 
             colors = plt.cm.viridis(np.linspace(0.3, 0.9, len(indices)))
             bars = ax3.barh(range(len(indices)), importances[indices], color=colors, edgecolor='black')
 
             ax3.set_yticks(range(len(indices)))
-            ax3.set_yticklabels([self.feature_names[i] for i in indices], fontsize=9)
+            # Сокращаем длинные названия признаков
+            feature_labels = [self.feature_names[i][:25] + '...' if len(self.feature_names[i]) > 25
+                              else self.feature_names[i] for i in indices]
+            ax3.set_yticklabels(feature_labels, fontsize=8)
             ax3.set_xlabel('Важность признака', fontsize=10)
-            ax3.set_title('Топ-15 важных признаков', fontsize=12, fontweight='bold')
+            ax3.set_title('Топ-12 важных признаков', fontsize=11, fontweight='bold', pad=10)
             ax3.grid(True, alpha=0.3, axis='x')
+            ax3.tick_params(labelsize=8)
 
-            # Добавляем значения на столбцы
+            # Добавляем значения на столбцы (только если есть место)
             for bar, importance in zip(bars, importances[indices]):
                 width = bar.get_width()
-                ax3.text(width + 0.001, bar.get_y() + bar.get_height() / 2,
-                         f'{importance:.3f}', ha='left', va='center', fontsize=8)
+                # Проверяем, есть ли место для текста
+                if width > max(importances[indices]) * 0.05:  # Только если столбец достаточно широкий
+                    ax3.text(width + max(importances[indices]) * 0.01, bar.get_y() + bar.get_height() / 2,
+                             f'{importance:.3f}', ha='left', va='center', fontsize=6)
+        else:
+            # Если нет важности признаков, создаем пустой subplot
+            ax3 = fig.add_subplot(223)
+            ax3.text(0.5, 0.5, 'Важность признаков\nнедоступна для\nэтой модели',
+                     ha='center', va='center', fontsize=9, transform=ax3.transAxes)
+            ax3.set_title('Важность признаков', fontsize=10, fontweight='bold', pad=8)
+            ax3.axis('off')
 
         # 4. Остатки
         ax4 = fig.add_subplot(224)
-        ax4.scatter(y_pred, errors, alpha=0.6, color='#9c27b0', s=50)
+        ax4.scatter(y_pred, errors, alpha=0.6, color='#9c27b0', s=40)
         ax4.axhline(y=0, color='r', linestyle='--', lw=2)
 
         # Сглаживание остатков
@@ -1607,13 +1679,21 @@ class SalaryPredictorApp(QMainWindow):
 
         ax4.set_xlabel('Предсказанная зарплата (тыс.руб.)', fontsize=10)
         ax4.set_ylabel('Остатки', fontsize=10)
-        ax4.set_title('Остатки vs Предсказания', fontsize=12, fontweight='bold')
-        ax4.legend()
+        ax4.set_title('Остатки vs Предсказания', fontsize=11, fontweight='bold', pad=10)
+        ax4.legend(loc='upper left', fontsize=8, framealpha=0.9)
         ax4.grid(True, alpha=0.3)
+        ax4.tick_params(labelsize=9)
 
-        fig.tight_layout()
+        # Применяем темную тему
+        self.setup_matplotlib_style(fig)
+
+        # Улучшенное размещение с большими отступами для предотвращения перекрытий
+        fig.tight_layout(pad=3.0, h_pad=3.5, w_pad=3.0)
+        # Дополнительная настройка для предотвращения перекрытий подписей
+        fig.subplots_adjust(top=0.95, bottom=0.12, left=0.12, right=0.95, hspace=0.4, wspace=0.35)
 
         canvas = FigureCanvas(fig)
+        canvas.setMinimumSize(1000, 800)
         self.viz_layout.addWidget(canvas)
         self.training_tabs.setCurrentIndex(1)
 
@@ -1686,10 +1766,18 @@ class SalaryPredictorApp(QMainWindow):
 
         main_layout = QHBoxLayout(self.prediction_tab)
 
-        # Левая панель - ввод данных для предсказания
+        # Левая панель - ввод данных для предсказания (с прокруткой)
+        left_scroll = QScrollArea()
+        left_scroll.setWidgetResizable(True)
+        left_scroll.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
+        left_scroll.setVerticalScrollBarPolicy(Qt.ScrollBarAsNeeded)
+        left_scroll.setFixedWidth(420)
+
         left_panel = QWidget()
         left_panel.setFixedWidth(400)
         left_layout = QVBoxLayout(left_panel)
+        left_layout.setSpacing(15)
+        left_layout.setContentsMargins(10, 10, 10, 10)
 
         # Группа ввода данных
         input_group = QGroupBox("📝 Введите данные для предсказания")
@@ -1784,11 +1872,19 @@ class SalaryPredictorApp(QMainWindow):
         left_layout.addWidget(predict_group)
 
         left_layout.addStretch()
-        main_layout.addWidget(left_panel)
+        left_scroll.setWidget(left_panel)
+        main_layout.addWidget(left_scroll)
 
-        # Правая панель - результаты предсказания
+        # Правая панель - результаты предсказания (с прокруткой)
+        right_scroll = QScrollArea()
+        right_scroll.setWidgetResizable(True)
+        right_scroll.setHorizontalScrollBarPolicy(Qt.ScrollBarAsNeeded)
+        right_scroll.setVerticalScrollBarPolicy(Qt.ScrollBarAsNeeded)
+
         right_panel = QWidget()
         right_layout = QVBoxLayout(right_panel)
+        right_layout.setSpacing(15)
+        right_layout.setContentsMargins(5, 5, 5, 5)
 
         # Результат предсказания
         self.result_group = QGroupBox("📊 Результат предсказания")
@@ -1830,7 +1926,8 @@ class SalaryPredictorApp(QMainWindow):
 
         right_layout.addWidget(history_group)
 
-        main_layout.addWidget(right_panel)
+        right_scroll.setWidget(right_panel)
+        main_layout.addWidget(right_scroll)
 
         # Инициализация истории предсказаний
         self.prediction_history_data = []
@@ -2032,10 +2129,18 @@ class SalaryPredictorApp(QMainWindow):
 
         main_layout = QHBoxLayout(self.analysis_tab)
 
-        # Левая панель - инструменты анализа
+        # Левая панель - инструменты анализа (с прокруткой)
+        left_scroll = QScrollArea()
+        left_scroll.setWidgetResizable(True)
+        left_scroll.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
+        left_scroll.setVerticalScrollBarPolicy(Qt.ScrollBarAsNeeded)
+        left_scroll.setFixedWidth(370)
+
         left_panel = QWidget()
         left_panel.setFixedWidth(350)
         left_layout = QVBoxLayout(left_panel)
+        left_layout.setSpacing(15)
+        left_layout.setContentsMargins(10, 10, 10, 10)
 
         # Группа анализа данных
         analysis_group = QGroupBox("🔍 Инструменты Анализа")
@@ -2078,9 +2183,15 @@ class SalaryPredictorApp(QMainWindow):
         left_layout.addWidget(stats_group)
 
         left_layout.addStretch()
-        main_layout.addWidget(left_panel)
+        left_scroll.setWidget(left_panel)
+        main_layout.addWidget(left_scroll)
 
-        # Правая панель - графики анализа
+        # Правая панель - графики анализа (с прокруткой)
+        right_scroll = QScrollArea()
+        right_scroll.setWidgetResizable(True)
+        right_scroll.setHorizontalScrollBarPolicy(Qt.ScrollBarAsNeeded)
+        right_scroll.setVerticalScrollBarPolicy(Qt.ScrollBarAsNeeded)
+
         right_panel = QWidget()
         right_layout = QVBoxLayout(right_panel)
 
@@ -2088,7 +2199,8 @@ class SalaryPredictorApp(QMainWindow):
         self.analysis_plots_layout = QVBoxLayout(self.analysis_plots_widget)
         right_layout.addWidget(self.analysis_plots_widget)
 
-        main_layout.addWidget(right_panel)
+        right_scroll.setWidget(right_panel)
+        main_layout.addWidget(right_scroll)
 
     def analyze_salary_distribution(self):
         """Анализ распределения зарплат"""
@@ -2119,52 +2231,64 @@ class SalaryPredictorApp(QMainWindow):
             if widget:
                 widget.setParent(None)
 
-        fig = Figure(figsize=(12, 8))
+        fig = Figure(figsize=(18, 14))
 
         # 1. Гистограмма распределения
         ax1 = fig.add_subplot(221)
         n_bins = min(30, len(salary_data) // 10)
         ax1.hist(salary_data, bins=n_bins, color='#2196f3', alpha=0.7, edgecolor='black')
-        ax1.set_xlabel('Зарплата (тыс.руб.)')
-        ax1.set_ylabel('Частота')
-        ax1.set_title('Распределение зарплат')
+        ax1.set_xlabel('Зарплата (тыс.руб.)', fontsize=12)
+        ax1.set_ylabel('Частота', fontsize=12)
+        ax1.set_title('Распределение зарплат', fontsize=14, fontweight='bold', pad=18)
         ax1.grid(True, alpha=0.3)
+        ax1.tick_params(labelsize=10)
 
         # Добавляем линии среднего и медианы
         mean_salary = salary_data.mean()
         median_salary = salary_data.median()
         ax1.axvline(mean_salary, color='red', linestyle='--', linewidth=2, label=f'Среднее: {mean_salary:.1f}')
         ax1.axvline(median_salary, color='green', linestyle='--', linewidth=2, label=f'Медиана: {median_salary:.1f}')
-        ax1.legend()
+        ax1.legend(loc='upper right', fontsize=10, framealpha=0.9)
 
         # 2. Box plot
         ax2 = fig.add_subplot(222)
         bp = ax2.boxplot(salary_data, vert=True, patch_artist=True)
         bp['boxes'][0].set_facecolor('#ff9800')
         bp['medians'][0].set_color('red')
-        ax2.set_ylabel('Зарплата (тыс.руб.)')
-        ax2.set_title('Box plot зарплат')
+        ax2.set_ylabel('Зарплата (тыс.руб.)', fontsize=12)
+        ax2.set_title('Box plot зарплат', fontsize=14, fontweight='bold', pad=18)
         ax2.grid(True, alpha=0.3)
+        ax2.tick_params(labelsize=10)
 
         # 3. Q-Q plot
         ax3 = fig.add_subplot(223)
         from scipy import stats
         stats.probplot(salary_data, dist="norm", plot=ax3)
-        ax3.set_title('Q-Q plot (нормальность распределения)')
+        ax3.set_title('Q-Q plot (нормальность распределения)', fontsize=14, fontweight='bold', pad=18)
+        ax3.set_xlabel('Теоретические квантили', fontsize=12)
+        ax3.set_ylabel('Выборочные квантили', fontsize=12)
         ax3.grid(True, alpha=0.3)
+        ax3.tick_params(labelsize=10)
 
         # 4. Плотность распределения
         ax4 = fig.add_subplot(224)
         import seaborn as sns
         sns.kdeplot(salary_data, ax=ax4, color='purple', linewidth=2, fill=True, alpha=0.3)
-        ax4.set_xlabel('Зарплата (тыс.руб.)')
-        ax4.set_ylabel('Плотность')
-        ax4.set_title('Плотность распределения')
+        ax4.set_xlabel('Зарплата (тыс.руб.)', fontsize=12)
+        ax4.set_ylabel('Плотность', fontsize=12)
+        ax4.set_title('Плотность распределения', fontsize=14, fontweight='bold', pad=18)
         ax4.grid(True, alpha=0.3)
+        ax4.tick_params(labelsize=10)
 
-        fig.tight_layout()
+        # Применяем темную тему
+        self.setup_matplotlib_style(fig)
+
+        # Улучшенное размещение с большими отступами
+        fig.tight_layout(pad=4.0, h_pad=4.0, w_pad=4.0)
+        fig.subplots_adjust(top=0.94, bottom=0.1, left=0.1, right=0.95, hspace=0.45, wspace=0.4)
 
         canvas = FigureCanvas(fig)
+        canvas.setMinimumSize(1200, 900)
         self.analysis_plots_layout.addWidget(canvas)
 
         # Обновляем статистику
@@ -2226,7 +2350,7 @@ class SalaryPredictorApp(QMainWindow):
         # Сортируем по средней зарплате
         salary_by_position = salary_by_position.sort_values('mean', ascending=False).head(15)
 
-        fig = Figure(figsize=(14, 8))
+        fig = Figure(figsize=(18, 10))
 
         # 1. Bar chart средних зарплат
         ax1 = fig.add_subplot(121)
@@ -2237,16 +2361,17 @@ class SalaryPredictorApp(QMainWindow):
 
         bars = ax1.barh(y_pos, means, color='#4fc3f7', edgecolor='black')
         ax1.set_yticks(y_pos)
-        ax1.set_yticklabels(positions)
-        ax1.set_xlabel('Средняя зарплата (тыс.руб.)')
-        ax1.set_title('Топ-15 должностей по средней зарплате')
+        ax1.set_yticklabels(positions, fontsize=10)
+        ax1.set_xlabel('Средняя зарплата (тыс.руб.)', fontsize=12)
+        ax1.set_title('Топ-15 должностей по средней зарплате', fontsize=14, fontweight='bold', pad=18)
         ax1.grid(True, alpha=0.3, axis='x')
+        ax1.tick_params(labelsize=10)
 
         # Добавляем значения на столбцы
         for bar, mean_val, count in zip(bars, means, salary_by_position['count']):
             width = bar.get_width()
-            ax1.text(width + 1, bar.get_y() + bar.get_height() / 2,
-                     f'{mean_val:.1f} (n={count})', ha='left', va='center')
+            ax1.text(width + max(means) * 0.02, bar.get_y() + bar.get_height() / 2,
+                     f'{mean_val:.1f} (n={count})', ha='left', va='center', fontsize=8)
 
         # 2. Box plot по топ-5 должностям
         if len(positions) >= 5:
@@ -2268,14 +2393,21 @@ class SalaryPredictorApp(QMainWindow):
             for patch, color in zip(bp['boxes'], colors):
                 patch.set_facecolor(color)
 
-            ax2.set_xticklabels(top_positions, rotation=45, ha='right')
-            ax2.set_ylabel('Зарплата (тыс.руб.)')
-            ax2.set_title('Распределение зарплат по топ-5 должностям')
+            ax2.set_xticklabels(top_positions, rotation=45, ha='right', fontsize=10)
+            ax2.set_ylabel('Зарплата (тыс.руб.)', fontsize=12)
+            ax2.set_title('Распределение зарплат по топ-5 должностям', fontsize=14, fontweight='bold', pad=18)
             ax2.grid(True, alpha=0.3)
+            ax2.tick_params(labelsize=10)
 
-        fig.tight_layout()
+        # Применяем темную тему
+        self.setup_matplotlib_style(fig)
+
+        # Улучшенное размещение с большими отступами
+        fig.tight_layout(pad=4.0, h_pad=4.0, w_pad=4.0)
+        fig.subplots_adjust(top=0.94, bottom=0.15, left=0.15, right=0.95, hspace=0.35, wspace=0.4)
 
         canvas = FigureCanvas(fig)
+        canvas.setMinimumSize(1200, 700)
         self.analysis_plots_layout.addWidget(canvas)
 
         # Статистика
@@ -2336,7 +2468,7 @@ class SalaryPredictorApp(QMainWindow):
         # Сортируем по количеству записей
         salary_by_city = salary_by_city.sort_values('count', ascending=False).head(10)
 
-        fig = Figure(figsize=(14, 8))
+        fig = Figure(figsize=(18, 12))
 
         # 1. Bar chart средних зарплат по городам
         ax1 = fig.add_subplot(121)
@@ -2351,24 +2483,40 @@ class SalaryPredictorApp(QMainWindow):
                          label='Медиана', color='#ff9800', edgecolor='black')
 
         ax1.set_yticks(y_pos)
-        ax1.set_yticklabels(cities)
-        ax1.set_xlabel('Зарплата (тыс.руб.)')
-        ax1.set_title('Средняя и медианная зарплата по городам (топ-10)')
-        ax1.legend()
+        ax1.set_yticklabels(cities, fontsize=10)
+        ax1.set_xlabel('Зарплата (тыс.руб.)', fontsize=12)
+        ax1.set_title('Средняя и медианная зарплата по городам (топ-10)',
+                      fontsize=14, fontweight='bold', pad=18)
+        ax1.legend(loc='lower right', fontsize=10, framealpha=0.9)
         ax1.grid(True, alpha=0.3, axis='x')
+        ax1.tick_params(labelsize=10)
 
         # 2. Количество записей по городам
         ax2 = fig.add_subplot(122)
         colors = plt.cm.Paired(np.linspace(0, 1, len(cities)))
         wedges, texts, autotexts = ax2.pie(salary_by_city['count'], labels=cities,
                                            colors=colors, autopct='%1.1f%%',
-                                           startangle=90)
+                                           startangle=90, textprops={'fontsize': 10})
 
-        ax2.set_title('Распределение записей по городам')
+        # Улучшаем читаемость текста на pie chart
+        for autotext in autotexts:
+            autotext.set_color('white')
+            autotext.set_fontweight('bold')
+            autotext.set_fontsize(10)
+        for text in texts:
+            text.set_fontsize(10)
 
-        fig.tight_layout()
+        ax2.set_title('Распределение записей по городам', fontsize=14, fontweight='bold', pad=18)
+
+        # Применяем темную тему
+        self.setup_matplotlib_style(fig)
+
+        # Улучшенное размещение с большими отступами
+        fig.tight_layout(pad=4.0, h_pad=4.0, w_pad=4.0)
+        fig.subplots_adjust(top=0.94, bottom=0.1, left=0.1, right=0.95, hspace=0.35, wspace=0.4)
 
         canvas = FigureCanvas(fig)
+        canvas.setMinimumSize(1200, 800)
         self.analysis_plots_layout.addWidget(canvas)
 
         # Статистика
@@ -2433,17 +2581,20 @@ class SalaryPredictorApp(QMainWindow):
             QMessageBox.warning(self, "Внимание", "Нет корректных данных для анализа")
             return
 
-        fig = Figure(figsize=(14, 10))
+        fig = Figure(figsize=(18, 14))
 
         # 1. Scatter plot
         ax1 = fig.add_subplot(221)
         scatter = ax1.scatter(experience_data, salary_data, alpha=0.6,
                               c=salary_data, cmap='viridis', s=50)
-        ax1.set_xlabel('Опыт (лет)')
-        ax1.set_ylabel('Зарплата (тыс.руб.)')
-        ax1.set_title('Зависимость зарплаты от опыта')
+        ax1.set_xlabel('Опыт (лет)', fontsize=12)
+        ax1.set_ylabel('Зарплата (тыс.руб.)', fontsize=12)
+        ax1.set_title('Зависимость зарплаты от опыта', fontsize=14, fontweight='bold', pad=18)
         ax1.grid(True, alpha=0.3)
-        plt.colorbar(scatter, ax=ax1, label='Зарплата (тыс.руб.)')
+        ax1.tick_params(labelsize=10)
+        cbar1 = plt.colorbar(scatter, ax=ax1)
+        cbar1.set_label('Зарплата (тыс.руб.)', fontsize=11)
+        cbar1.ax.tick_params(labelsize=10)
 
         # Линия тренда
         if len(experience_data) > 1:
@@ -2452,7 +2603,7 @@ class SalaryPredictorApp(QMainWindow):
             poly = np.poly1d(coeffs)
             x_range = np.linspace(experience_data.min(), experience_data.max(), 100)
             ax1.plot(x_range, poly(x_range), 'r-', linewidth=2, label='Тренд')
-            ax1.legend()
+            ax1.legend(loc='upper left', fontsize=9, framealpha=0.9)
 
         # 2. Биннинг опыта и средние зарплаты
         ax2 = fig.add_subplot(222)
@@ -2472,16 +2623,19 @@ class SalaryPredictorApp(QMainWindow):
                        yerr=salary_by_exp['std'], capsize=5, edgecolor='black')
 
         ax2.set_xticks(x_pos)
-        ax2.set_xticklabels(salary_by_exp.index, rotation=45, ha='right')
-        ax2.set_xlabel('Опыт (лет)')
-        ax2.set_ylabel('Средняя зарплата (тыс.руб.)')
-        ax2.set_title('Средняя зарплата по опыту работы')
+        ax2.set_xticklabels(salary_by_exp.index, rotation=45, ha='right', fontsize=10)
+        ax2.set_xlabel('Опыт (лет)', fontsize=12)
+        ax2.set_ylabel('Средняя зарплата (тыс.руб.)', fontsize=12)
+        ax2.set_title('Средняя зарплата по опыту работы', fontsize=14, fontweight='bold', pad=18)
         ax2.grid(True, alpha=0.3, axis='y')
+        ax2.tick_params(labelsize=10)
 
         # Добавляем значения на столбцы
         for bar, mean_val, count in zip(bars, salary_by_exp['mean'], salary_by_exp['count']):
             height = bar.get_height()
-            ax2.text(bar.get_x() + bar.get_width() / 2., height + 5,
+            err = salary_by_exp.loc[salary_by_exp.index[bars.index(bar)], 'std'] if len(salary_by_exp) > bars.index(
+                bar) else 0
+            ax2.text(bar.get_x() + bar.get_width() / 2., height + err + max(salary_by_exp['mean']) * 0.02,
                      f'{mean_val:.1f}\n(n={count})', ha='center', va='bottom', fontsize=8)
 
         # 3. Зависимость зарплаты от возраста (если есть столбец возраста)
@@ -2500,11 +2654,21 @@ class SalaryPredictorApp(QMainWindow):
                 scatter2 = ax3.scatter(age_data[mask_age], salary_data[mask_age],
                                        alpha=0.6, c=experience_data[mask_age],
                                        cmap='plasma', s=50)
-                ax3.set_xlabel('Возраст (лет)')
-                ax3.set_ylabel('Зарплата (тыс.руб.)')
-                ax3.set_title('Зависимость зарплаты от возраста')
+                ax3.set_xlabel('Возраст (лет)', fontsize=12)
+                ax3.set_ylabel('Зарплата (тыс.руб.)', fontsize=12)
+                ax3.set_title('Зависимость зарплаты от возраста', fontsize=14, fontweight='bold', pad=18)
                 ax3.grid(True, alpha=0.3)
-                plt.colorbar(scatter2, ax=ax3, label='Опыт (лет)')
+                ax3.tick_params(labelsize=10)
+                cbar2 = plt.colorbar(scatter2, ax=ax3)
+                cbar2.set_label('Опыт (лет)', fontsize=11)
+                cbar2.ax.tick_params(labelsize=10)
+        else:
+            # Если нет данных о возрасте, создаем пустой subplot
+            ax3 = fig.add_subplot(223)
+            ax3.text(0.5, 0.5, 'Данные о возрасте\nне найдены',
+                     ha='center', va='center', fontsize=12, transform=ax3.transAxes)
+            ax3.set_title('Зависимость зарплаты от возраста', fontsize=13, fontweight='bold', pad=15)
+            ax3.axis('off')
 
         # 4. 3D plot опыт vs возраст vs зарплата
         if age_col:
@@ -2512,18 +2676,31 @@ class SalaryPredictorApp(QMainWindow):
 
             mask_3d = experience_data.notna() & salary_data.notna() & age_data.notna()
             if mask_3d.sum() > 0:
-                ax4.scatter(experience_data[mask_3d], age_data[mask_3d],
-                            salary_data[mask_3d], c=salary_data[mask_3d],
-                            cmap='viridis', s=30, alpha=0.6)
+                scatter3d = ax4.scatter(experience_data[mask_3d], age_data[mask_3d],
+                                        salary_data[mask_3d], c=salary_data[mask_3d],
+                                        cmap='viridis', s=30, alpha=0.6)
 
-                ax4.set_xlabel('Опыт (лет)')
-                ax4.set_ylabel('Возраст (лет)')
-                ax4.set_zlabel('Зарплата (тыс.руб.)')
-                ax4.set_title('3D: Опыт, Возраст, Зарплата')
+                ax4.set_xlabel('Опыт (лет)', fontsize=11)
+                ax4.set_ylabel('Возраст (лет)', fontsize=11)
+                ax4.set_zlabel('Зарплата (тыс.руб.)', fontsize=11)
+                ax4.set_title('3D: Опыт vs Возраст vs Зарплата', fontsize=14, fontweight='bold', pad=18)
+        else:
+            # Если нет данных о возрасте, создаем пустой subplot
+            ax4 = fig.add_subplot(224)
+            ax4.text(0.5, 0.5, '3D визуализация\nнедоступна\n(нет данных о возрасте)',
+                     ha='center', va='center', fontsize=12, transform=ax4.transAxes)
+            ax4.set_title('3D: Опыт vs Возраст vs Зарплата', fontsize=13, fontweight='bold', pad=15)
+            ax4.axis('off')
 
-        fig.tight_layout()
+        # Применяем темную тему
+        self.setup_matplotlib_style(fig)
+
+        # Улучшенное размещение с большими отступами
+        fig.tight_layout(pad=4.0, h_pad=4.0, w_pad=4.0)
+        fig.subplots_adjust(top=0.94, bottom=0.12, left=0.12, right=0.95, hspace=0.45, wspace=0.4)
 
         canvas = FigureCanvas(fig)
+        canvas.setMinimumSize(1200, 900)
         self.analysis_plots_layout.addWidget(canvas)
 
         # Статистика

@@ -1,0 +1,1001 @@
+ID,Должность,Возраст,Опыт_лет,Город,Образование,Уровень,Отрасль,Язык_программирования,Уровень_английского,Количество_проектов,Зарплата_тыс
+1,Full Stack Developer,42,16.0,Екатеринбург,Бакалавр,Architect,Промышленность,PHP,C1,14,600.0
+2,Data Analyst,38,13.2,Самара,Бакалавр,Lead,Госсектор,Python,B2,14,600.0
+3,System Administrator,35,8.9,Ростов-на-Дону,MBA,Senior,E-commerce,Ruby,B2,9,485.2
+4,Frontend Developer,35,12.3,Волгоград,Магистр,Lead,Промышленность,Ruby,B2,12,600.0
+5,Cloud Architect,23,3.9,Волгоград,Бакалавр,Junior,Финтех,C++,C2,4,230.1
+6,QA Engineer,35,9.3,Уфа,Магистр,Senior,Ритейл,JavaScript,C1,11,419.5
+7,Product Manager,33,12.3,Пермь,Среднее,Lead,Промышленность,PHP,A1,9,600.0
+8,Data Analyst,24,0.8,Ростов-на-Дону,Магистр,Junior,Телеком,Ruby,A2,1,103.1
+9,Software Engineer,35,12.7,Воронеж,Магистр,Lead,E-commerce,PHP,C2,13,600.0
+10,Python Developer,28,8.0,Волгоград,Магистр,Middle,E-commerce,Kotlin,B2,7,357.5
+11,Cloud Architect,51,18.0,Краснодар,Бакалавр,Architect,E-commerce,C++,C1,18,600.0
+12,Backend Developer,38,17.7,Воронеж,Бакалавр,Architect,Телеком,C++,C2,17,600.0
+13,Product Manager,30,7.4,Уфа,PhD,Middle,Ритейл,Java,C2,5,433.5
+14,Security Engineer,26,4.8,Москва,Бакалавр,Middle,Медицина,C++,A1,3,270.1
+15,Product Manager,22,5.4,Санкт-Петербург,MBA,Middle,Госсектор,Python,A2,6,588.0
+16,Full Stack Developer,28,5.9,Уфа,Бакалавр,Middle,IT,Ruby,B1,7,288.5
+17,Cloud Architect,42,16.2,Воронеж,PhD,Architect,Госсектор,Swift,B2,12,600.0
+18,System Administrator,39,17.2,Ростов-на-Дону,PhD,Architect,IT,Ruby,B2,16,600.0
+19,Data Analyst,29,8.0,Екатеринбург,Бакалавр,Senior,IT,Kotlin,A1,9,353.0
+20,Data Scientist,46,19.9,Екатеринбург,Бакалавр,Architect,Промышленность,Java,B1,17,600.0
+21,Backend Developer,38,15.7,Ростов-на-Дону,PhD,Lead,E-commerce,Java,C2,15,600.0
+22,Software Engineer,23,0.6,Екатеринбург,Магистр,Junior,IT,C++,A1,0,124.2
+23,Security Engineer,32,6.8,Краснодар,Магистр,Middle,Госсектор,Java,C2,5,380.3
+24,Security Engineer,36,12.0,Москва,Бакалавр,Lead,Образование,Python,B2,13,600.0
+25,Product Manager,36,14.6,Уфа,Бакалавр,Lead,IT,Swift,C1,13,600.0
+26,Security Engineer,42,19.3,Нижний Новгород,Бакалавр,Architect,E-commerce,Swift,A2,16,600.0
+27,Data Analyst,26,1.9,Москва,Бакалавр,Junior,Промышленность,JavaScript,A2,2,108.5
+28,Python Developer,27,3.2,Пермь,Бакалавр,Junior,Телеком,Swift,C1,3,187.7
+29,Software Engineer,35,12.7,Новосибирск,Среднее,Lead,Ритейл,JavaScript,C2,11,595.1
+30,QA Engineer,37,11.1,Уфа,Среднее,Senior,Образование,C#,A1,10,325.0
+31,Product Manager,25,4.7,Волгоград,Бакалавр,Middle,Финтех,Ruby,B2,5,313.1
+32,Product Manager,38,14.4,Казань,Магистр,Lead,Телеком,C#,A2,12,600.0
+33,Cloud Architect,35,14.1,Казань,Бакалавр,Lead,IT,PHP,C1,11,600.0
+34,System Administrator,46,14.9,Ростов-на-Дону,Бакалавр,Lead,Образование,C#,C2,13,600.0
+35,Cloud Architect,24,1.3,Москва,Магистр,Junior,Образование,Ruby,B2,5,232.9
+36,Full Stack Developer,23,1.4,Воронеж,Магистр,Junior,Медицина,Python,B2,2,198.6
+37,Data Analyst,35,13.7,Москва,PhD,Lead,Промышленность,Java,A1,13,600.0
+38,QA Engineer,24,4.5,Самара,Среднее,Middle,Промышленность,Ruby,A1,5,168.5
+39,System Administrator,40,17.0,Ростов-на-Дону,Магистр,Architect,Образование,PHP,B2,17,600.0
+40,System Administrator,30,6.0,Краснодар,Магистр,Middle,Промышленность,JavaScript,A1,7,265.5
+41,Full Stack Developer,43,18.6,Екатеринбург,Магистр,Architect,Ритейл,Python,A1,14,600.0
+42,Backend Developer,30,6.3,Пермь,Бакалавр,Middle,Ритейл,C#,B1,9,276.1
+43,DevOps Engineer,40,13.6,Самара,Среднее,Lead,Образование,Kotlin,C2,11,600.0
+44,Machine Learning Engineer,40,17.8,Нижний Новгород,Магистр,Architect,Телеком,Python,C1,17,600.0
+45,Security Engineer,37,14.2,Екатеринбург,MBA,Lead,IT,Python,C2,15,600.0
+46,Cloud Architect,38,18.2,Новосибирск,Магистр,Architect,Телеком,Kotlin,A2,16,600.0
+47,Security Engineer,34,10.1,Новосибирск,Бакалавр,Senior,Ритейл,Swift,A1,12,490.4
+48,Cloud Architect,33,9.8,Казань,PhD,Senior,Образование,C#,C2,11,600.0
+49,DevOps Engineer,35,11.3,Нижний Новгород,Магистр,Senior,E-commerce,C#,C2,9,589.5
+50,Full Stack Developer,23,1.4,Уфа,Бакалавр,Junior,Финтех,C++,A2,4,164.2
+51,Product Manager,25,2.0,Нижний Новгород,Бакалавр,Junior,Финтех,Java,C1,5,263.9
+52,Machine Learning Engineer,35,14.7,Нижний Новгород,Магистр,Lead,IT,Ruby,A1,15,600.0
+53,Data Scientist,46,19.8,Ростов-на-Дону,PhD,Architect,E-commerce,Python,A2,15,600.0
+54,Cloud Architect,29,5.8,Казань,PhD,Middle,Ритейл,Java,A1,5,442.6
+55,Security Engineer,25,5.4,Самара,Магистр,Middle,Финтех,PHP,A2,5,423.9
+56,Backend Developer,44,15.6,Краснодар,Магистр,Lead,Образование,Swift,A1,14,600.0
+57,Frontend Developer,38,13.0,Екатеринбург,Магистр,Lead,Ритейл,Java,A2,12,600.0
+58,Backend Developer,32,9.3,Уфа,Магистр,Senior,IT,C++,A2,11,526.6
+59,QA Engineer,36,15.5,Нижний Новгород,Бакалавр,Lead,Промышленность,Swift,B1,14,600.0
+60,DevOps Engineer,29,4.0,Новосибирск,Магистр,Middle,Образование,Kotlin,B1,4,303.9
+61,Frontend Developer,29,7.2,Санкт-Петербург,Магистр,Middle,IT,Kotlin,C2,8,312.4
+62,Security Engineer,28,6.9,Екатеринбург,Среднее,Middle,IT,Python,A2,7,301.1
+63,Data Analyst,38,15.1,Уфа,Бакалавр,Lead,Финтех,Ruby,C2,15,600.0
+64,System Administrator,26,1.7,Новосибирск,Бакалавр,Junior,Ритейл,Go,B1,2,143.6
+65,Full Stack Developer,29,7.9,Самара,PhD,Middle,E-commerce,Swift,B2,9,358.4
+66,Software Engineer,34,10.2,Ростов-на-Дону,Магистр,Senior,Образование,Java,A2,11,502.6
+67,Backend Developer,39,18.0,Нижний Новгород,Бакалавр,Architect,Образование,Python,C1,14,600.0
+68,Backend Developer,34,7.6,Екатеринбург,PhD,Middle,Промышленность,Java,C1,8,365.9
+69,Cloud Architect,45,18.0,Воронеж,Бакалавр,Architect,Промышленность,Swift,A2,16,600.0
+70,QA Engineer,27,6.0,Пермь,Бакалавр,Middle,IT,C++,A1,4,230.2
+71,QA Engineer,40,15.5,Уфа,Магистр,Lead,Образование,Go,A2,12,600.0
+72,Full Stack Developer,37,11.2,Воронеж,Бакалавр,Senior,Промышленность,Python,A1,8,519.7
+73,Backend Developer,33,8.5,Ростов-на-Дону,Бакалавр,Senior,Финтех,PHP,B1,10,432.3
+74,Product Manager,32,7.9,Пермь,Бакалавр,Middle,E-commerce,C#,C2,6,351.5
+75,Frontend Developer,28,4.1,Новосибирск,PhD,Middle,Госсектор,JavaScript,C2,3,272.1
+76,Python Developer,35,15.1,Краснодар,Бакалавр,Lead,E-commerce,C#,B1,13,600.0
+77,Backend Developer,40,18.8,Нижний Новгород,Бакалавр,Architect,Ритейл,C++,C1,17,600.0
+78,Python Developer,37,14.3,Нижний Новгород,Магистр,Lead,Госсектор,Kotlin,A1,15,600.0
+79,System Administrator,29,2.7,Новосибирск,Бакалавр,Junior,E-commerce,JavaScript,B1,5,119.7
+80,DevOps Engineer,32,11.1,Уфа,Бакалавр,Senior,Финтех,Kotlin,C1,9,475.5
+81,Software Engineer,30,5.5,Уфа,PhD,Middle,IT,PHP,C1,8,358.2
+82,Product Manager,29,7.8,Уфа,PhD,Middle,Образование,Go,B1,6,462.2
+83,Cloud Architect,27,1.6,Воронеж,Бакалавр,Junior,Госсектор,Swift,A2,4,179.3
+84,Data Scientist,36,9.6,Краснодар,Бакалавр,Senior,Медицина,Go,A1,9,548.4
+85,Backend Developer,26,1.2,Краснодар,Бакалавр,Junior,IT,C#,A1,1,124.2
+86,DevOps Engineer,36,9.5,Воронеж,Магистр,Senior,Промышленность,Ruby,B1,7,548.8
+87,Machine Learning Engineer,37,7.3,Санкт-Петербург,Магистр,Middle,Госсектор,Java,A2,5,377.1
+88,Product Manager,38,9.9,Новосибирск,Бакалавр,Senior,Финтех,Kotlin,A2,9,526.7
+89,Product Manager,40,16.1,Ростов-на-Дону,Бакалавр,Architect,Образование,PHP,C2,14,600.0
+90,Machine Learning Engineer,48,17.8,Казань,Магистр,Architect,Госсектор,C++,B2,16,600.0
+91,Frontend Developer,30,8.4,Новосибирск,Магистр,Senior,Медицина,Java,C1,10,468.2
+92,System Administrator,28,8.7,Казань,Магистр,Senior,Госсектор,C++,C1,9,436.0
+93,Security Engineer,29,7.6,Уфа,Магистр,Middle,Телеком,Kotlin,C2,6,373.8
+94,Python Developer,39,10.0,Воронеж,Бакалавр,Senior,Медицина,Go,C2,7,506.9
+95,QA Engineer,33,10.8,Ростов-на-Дону,PhD,Senior,Госсектор,Kotlin,B2,12,473.9
+96,Data Scientist,38,11.3,Воронеж,Среднее,Senior,Промышленность,Swift,C2,13,483.8
+97,Data Scientist,33,12.2,Санкт-Петербург,Бакалавр,Lead,Госсектор,Kotlin,C2,12,600.0
+98,Project Manager,27,4.1,Воронеж,PhD,Middle,Телеком,C++,A1,5,352.9
+99,Data Analyst,42,11.5,Екатеринбург,Магистр,Senior,E-commerce,Kotlin,B2,9,472.2
+100,Machine Learning Engineer,43,16.9,Волгоград,Бакалавр,Architect,Промышленность,Python,A1,13,600.0
+101,QA Engineer,36,9.5,Пермь,Бакалавр,Senior,Промышленность,Swift,A1,8,470.2
+102,Machine Learning Engineer,41,14.8,Воронеж,MBA,Lead,Ритейл,Swift,B2,12,600.0
+103,System Administrator,38,13.6,Краснодар,Бакалавр,Lead,Образование,Go,A2,14,600.0
+104,Full Stack Developer,29,6.3,Уфа,Бакалавр,Middle,E-commerce,Kotlin,A1,7,300.2
+105,Product Manager,26,2.9,Екатеринбург,Магистр,Junior,Госсектор,Ruby,A1,5,197.4
+106,Software Engineer,31,14.9,Воронеж,Среднее,Lead,Телеком,JavaScript,C2,12,600.0
+107,System Administrator,33,10.8,Ростов-на-Дону,Магистр,Senior,Телеком,Swift,A2,11,519.4
+108,DevOps Engineer,38,14.9,Казань,Бакалавр,Lead,Ритейл,Swift,A1,15,600.0
+109,Cloud Architect,28,8.0,Уфа,Магистр,Middle,Финтех,Go,C2,8,491.2
+110,Software Engineer,39,15.0,Санкт-Петербург,Магистр,Lead,Ритейл,Kotlin,B1,15,600.0
+111,QA Engineer,25,1.2,Волгоград,Магистр,Junior,E-commerce,Kotlin,A1,3,142.9
+112,Data Scientist,40,10.1,Ростов-на-Дону,Магистр,Senior,Промышленность,JavaScript,B1,12,570.0
+113,Machine Learning Engineer,27,5.8,Воронеж,Среднее,Middle,Финтех,C#,B1,4,288.5
+114,Data Analyst,28,5.4,Москва,Бакалавр,Middle,Финтех,C#,C1,7,208.2
+115,Data Analyst,45,17.7,Уфа,Магистр,Architect,E-commerce,Python,C2,16,600.0
+116,Data Analyst,27,5.3,Воронеж,Бакалавр,Middle,Госсектор,Kotlin,B2,8,213.8
+117,Product Manager,25,3.6,Волгоград,PhD,Junior,IT,Ruby,A2,6,249.5
+118,Software Engineer,39,12.8,Ростов-на-Дону,Магистр,Lead,Финтех,Ruby,A2,12,600.0
+119,Cloud Architect,33,8.1,Воронеж,Бакалавр,Senior,IT,JavaScript,B2,9,531.1
+120,Product Manager,18,1.8,Новосибирск,Среднее,Junior,Медицина,C++,B1,2,174.7
+121,System Administrator,34,8.0,Екатеринбург,Среднее,Middle,IT,JavaScript,C1,7,229.7
+122,Machine Learning Engineer,34,9.3,Воронеж,Бакалавр,Senior,E-commerce,C++,C2,8,507.7
+123,Python Developer,39,19.3,Ростов-на-Дону,Магистр,Architect,Промышленность,Java,A1,16,600.0
+124,Product Manager,43,11.5,Санкт-Петербург,PhD,Senior,Медицина,PHP,B1,13,600.0
+125,Full Stack Developer,37,12.7,Ростов-на-Дону,Бакалавр,Lead,Госсектор,C++,B2,13,600.0
+126,Software Engineer,22,3.6,Санкт-Петербург,Бакалавр,Junior,Финтех,Python,C1,6,188.6
+127,Security Engineer,48,19.5,Нижний Новгород,MBA,Architect,E-commerce,PHP,B1,15,600.0
+128,Data Analyst,26,3.3,Пермь,Бакалавр,Junior,IT,Kotlin,A2,2,105.2
+129,Data Scientist,33,10.9,Санкт-Петербург,MBA,Senior,Телеком,Kotlin,A2,9,600.0
+130,Product Manager,29,2.5,Уфа,PhD,Junior,Промышленность,JavaScript,B2,2,240.7
+131,Data Scientist,38,12.7,Нижний Новгород,PhD,Lead,E-commerce,Go,A2,13,600.0
+132,Cloud Architect,33,10.8,Новосибирск,Бакалавр,Senior,E-commerce,Swift,C1,12,591.4
+133,Full Stack Developer,35,9.7,Санкт-Петербург,Среднее,Senior,E-commerce,JavaScript,C2,10,427.1
+134,Backend Developer,28,7.0,Краснодар,Бакалавр,Middle,IT,Go,A1,9,376.7
+135,Security Engineer,48,19.2,Москва,Магистр,Architect,E-commerce,PHP,A2,18,600.0
+136,Software Engineer,32,9.1,Самара,Магистр,Senior,Госсектор,Java,B1,8,600.0
+137,System Administrator,31,4.6,Пермь,Бакалавр,Middle,Финтех,Ruby,A2,6,323.5
+138,Full Stack Developer,31,8.6,Краснодар,Бакалавр,Senior,Госсектор,C++,A2,6,433.5
+139,Python Developer,27,8.1,Самара,Бакалавр,Senior,E-commerce,Ruby,B1,10,453.0
+140,Backend Developer,20,3.8,Нижний Новгород,Бакалавр,Junior,Медицина,Python,A1,5,177.4
+141,Product Manager,25,1.2,Нижний Новгород,PhD,Junior,Медицина,PHP,B2,3,235.1
+142,Data Scientist,44,19.7,Казань,Магистр,Architect,Образование,Go,C1,17,600.0
+143,Python Developer,37,10.4,Краснодар,Бакалавр,Senior,Медицина,Go,B2,11,519.9
+144,Data Scientist,28,4.4,Воронеж,MBA,Middle,Финтех,Python,A2,4,401.2
+145,Data Scientist,37,12.5,Новосибирск,PhD,Lead,Образование,Python,A1,13,600.0
+146,Frontend Developer,33,11.8,Волгоград,PhD,Senior,Ритейл,Swift,C1,9,572.8
+147,Project Manager,38,17.6,Волгоград,PhD,Architect,IT,Swift,B1,15,600.0
+148,Data Analyst,25,6.3,Волгоград,Бакалавр,Middle,Ритейл,Java,B2,9,322.9
+149,Python Developer,24,5.1,Ростов-на-Дону,Магистр,Middle,E-commerce,JavaScript,C2,5,293.3
+150,Frontend Developer,35,17.3,Казань,Бакалавр,Architect,Медицина,C#,A2,16,600.0
+151,Cloud Architect,36,8.2,Краснодар,Магистр,Senior,Образование,Ruby,B1,10,600.0
+152,Product Manager,41,19.1,Волгоград,Бакалавр,Architect,Медицина,JavaScript,C2,17,600.0
+153,Frontend Developer,32,6.1,Москва,Бакалавр,Middle,Медицина,JavaScript,A2,7,247.5
+154,QA Engineer,27,2.9,Самара,Магистр,Junior,Промышленность,Kotlin,C1,2,113.0
+155,DevOps Engineer,33,8.8,Ростов-на-Дону,Магистр,Senior,Ритейл,Go,B2,11,540.6
+156,Cloud Architect,40,12.4,Санкт-Петербург,Бакалавр,Lead,Промышленность,C#,B2,10,600.0
+157,Machine Learning Engineer,45,17.1,Новосибирск,Бакалавр,Architect,Финтех,C#,A1,14,600.0
+158,Python Developer,31,4.7,Ростов-на-Дону,Бакалавр,Middle,Финтех,Swift,C2,7,293.4
+159,Machine Learning Engineer,34,12.1,Новосибирск,Магистр,Lead,Медицина,Ruby,B2,11,600.0
+160,QA Engineer,30,7.1,Уфа,Магистр,Middle,IT,Java,A1,8,271.0
+161,Project Manager,27,7.2,Уфа,Магистр,Middle,Финтех,C#,C2,8,465.6
+162,Machine Learning Engineer,31,10.9,Новосибирск,MBA,Senior,Финтех,Go,A1,9,600.0
+163,Full Stack Developer,33,9.6,Ростов-на-Дону,Бакалавр,Senior,Телеком,Ruby,A2,7,451.0
+164,Product Manager,34,7.3,Москва,Бакалавр,Middle,Ритейл,C++,B2,9,349.7
+165,Security Engineer,32,10.7,Санкт-Петербург,Магистр,Senior,Медицина,Go,B2,11,600.0
+166,Python Developer,24,4.9,Краснодар,Бакалавр,Middle,Медицина,Java,B2,3,232.5
+167,Data Scientist,34,10.6,Нижний Новгород,PhD,Senior,Финтех,Python,A2,9,600.0
+168,System Administrator,33,7.9,Санкт-Петербург,Бакалавр,Middle,E-commerce,JavaScript,B1,8,276.7
+169,Data Scientist,47,19.2,Москва,Бакалавр,Architect,Госсектор,C++,C2,15,600.0
+170,Security Engineer,19,3.9,Ростов-на-Дону,Бакалавр,Junior,Медицина,JavaScript,B2,7,173.6
+171,System Administrator,35,11.2,Воронеж,Бакалавр,Senior,Финтех,Go,C1,11,486.7
+172,Product Manager,34,7.6,Уфа,Бакалавр,Middle,Ритейл,JavaScript,C1,8,301.0
+173,Full Stack Developer,26,5.2,Екатеринбург,Магистр,Middle,Медицина,C#,B2,4,308.9
+174,DevOps Engineer,31,10.8,Краснодар,Бакалавр,Senior,Образование,Go,C2,10,540.9
+175,System Administrator,40,15.5,Уфа,Среднее,Lead,Телеком,Kotlin,A2,16,600.0
+176,Frontend Developer,27,4.7,Самара,Магистр,Middle,Медицина,C++,C1,7,292.9
+177,Data Scientist,29,6.8,Волгоград,Бакалавр,Middle,IT,C#,A2,6,350.7
+178,Software Engineer,26,2.5,Самара,Среднее,Junior,Промышленность,Kotlin,A2,1,131.5
+179,Frontend Developer,34,16.6,Новосибирск,Бакалавр,Architect,Образование,Ruby,C1,13,600.0
+180,Product Manager,33,10.5,Уфа,Магистр,Senior,IT,Java,B1,12,600.0
+181,Frontend Developer,32,10.4,Пермь,MBA,Senior,E-commerce,Ruby,B1,10,531.4
+182,Project Manager,36,8.5,Ростов-на-Дону,Среднее,Senior,Финтех,Python,A1,9,481.4
+183,Cloud Architect,28,4.5,Екатеринбург,MBA,Middle,Промышленность,Kotlin,C1,4,421.6
+184,Data Scientist,41,12.2,Краснодар,Бакалавр,Lead,Ритейл,PHP,A2,9,600.0
+185,Software Engineer,24,7.8,Новосибирск,Бакалавр,Middle,IT,C#,B2,9,307.2
+186,Data Analyst,42,19.9,Казань,Бакалавр,Architect,Промышленность,C#,C1,16,600.0
+187,Security Engineer,41,14.7,Волгоград,Магистр,Lead,Финтех,Go,B2,11,600.0
+188,Data Scientist,28,3.1,Казань,PhD,Junior,IT,Go,B1,6,247.3
+189,Data Analyst,37,12.4,Пермь,Бакалавр,Lead,Образование,Kotlin,A1,10,562.7
+190,Machine Learning Engineer,45,19.8,Краснодар,Бакалавр,Architect,Финтех,C#,C2,16,600.0
+191,Software Engineer,36,7.8,Ростов-на-Дону,PhD,Middle,Финтех,Python,C2,9,447.9
+192,Frontend Developer,28,7.7,Волгоград,PhD,Middle,Медицина,Kotlin,B2,10,338.7
+193,DevOps Engineer,39,15.7,Екатеринбург,Среднее,Lead,Ритейл,Kotlin,C2,16,600.0
+194,System Administrator,23,2.3,Екатеринбург,Бакалавр,Junior,Промышленность,Ruby,B2,2,177.4
+195,Security Engineer,38,10.0,Пермь,Бакалавр,Senior,Госсектор,Go,C1,9,575.0
+196,Frontend Developer,32,15.9,Москва,Магистр,Lead,Ритейл,JavaScript,B2,12,600.0
+197,Product Manager,30,6.3,Самара,Магистр,Middle,Образование,Ruby,A1,8,354.4
+198,Software Engineer,37,11.5,Новосибирск,Магистр,Senior,E-commerce,Java,C1,11,577.6
+199,Security Engineer,25,4.9,Самара,Бакалавр,Middle,Медицина,C++,C2,7,242.4
+200,Security Engineer,31,14.7,Уфа,Магистр,Lead,Ритейл,Swift,B2,14,600.0
+201,DevOps Engineer,25,0.8,Ростов-на-Дону,Бакалавр,Junior,Медицина,Go,B2,0,146.0
+202,Data Analyst,26,1.4,Санкт-Петербург,Бакалавр,Junior,Промышленность,Ruby,C2,3,150.5
+203,Project Manager,47,19.3,Казань,Бакалавр,Architect,Финтех,C#,A2,15,600.0
+204,Frontend Developer,38,13.3,Ростов-на-Дону,MBA,Lead,IT,Swift,C1,13,600.0
+205,Data Scientist,36,14.5,Самара,Магистр,Lead,Ритейл,JavaScript,B2,15,600.0
+206,Full Stack Developer,36,14.3,Нижний Новгород,Бакалавр,Lead,Ритейл,C#,A2,15,600.0
+207,Data Scientist,24,2.4,Новосибирск,Бакалавр,Junior,IT,Kotlin,B1,4,189.2
+208,Full Stack Developer,47,17.5,Пермь,Среднее,Architect,Ритейл,Go,B2,18,600.0
+209,Data Analyst,45,19.7,Краснодар,Магистр,Architect,Медицина,Java,C2,18,600.0
+210,Full Stack Developer,45,16.5,Пермь,Бакалавр,Architect,Ритейл,PHP,B2,14,600.0
+211,DevOps Engineer,32,5.9,Санкт-Петербург,Бакалавр,Middle,Телеком,Go,B2,7,339.2
+212,Machine Learning Engineer,38,7.6,Нижний Новгород,PhD,Middle,Госсектор,C#,B2,9,429.8
+213,Machine Learning Engineer,43,17.7,Волгоград,Бакалавр,Architect,Финтех,C#,C2,18,600.0
+214,DevOps Engineer,47,19.9,Казань,Среднее,Architect,E-commerce,JavaScript,A2,18,600.0
+215,System Administrator,31,7.1,Пермь,Магистр,Middle,Ритейл,JavaScript,B2,5,288.7
+216,Frontend Developer,28,5.5,Новосибирск,Бакалавр,Middle,Медицина,Python,C1,5,280.7
+217,Data Scientist,35,7.3,Воронеж,Магистр,Middle,E-commerce,C#,B2,5,363.4
+218,Python Developer,22,3.0,Москва,Среднее,Junior,Промышленность,C++,B2,2,159.4
+219,Full Stack Developer,33,5.9,Казань,Бакалавр,Middle,Образование,Java,A1,8,302.8
+220,Security Engineer,39,15.3,Нижний Новгород,Среднее,Lead,Телеком,Java,A1,13,600.0
+221,Project Manager,20,2.7,Воронеж,Магистр,Junior,Медицина,Java,C2,4,148.4
+222,Python Developer,24,1.3,Самара,PhD,Junior,E-commerce,Java,B1,3,177.9
+223,Software Engineer,42,16.9,Уфа,Магистр,Architect,Госсектор,Java,B2,13,600.0
+224,Frontend Developer,34,11.0,Ростов-на-Дону,Бакалавр,Senior,Ритейл,C#,B1,8,583.0
+225,DevOps Engineer,20,1.8,Санкт-Петербург,Магистр,Junior,Образование,Java,B1,1,149.7
+226,Cloud Architect,35,13.3,Новосибирск,Магистр,Lead,IT,Swift,B2,10,600.0
+227,Data Scientist,45,17.6,Екатеринбург,PhD,Architect,Госсектор,Java,A2,14,600.0
+228,Data Analyst,49,19.0,Пермь,Магистр,Architect,E-commerce,C++,C2,18,600.0
+229,Backend Developer,28,5.6,Волгоград,Бакалавр,Middle,Госсектор,JavaScript,A1,4,236.0
+230,QA Engineer,43,18.2,Новосибирск,Бакалавр,Architect,Медицина,PHP,C2,16,600.0
+231,Data Analyst,39,12.0,Москва,Бакалавр,Lead,Телеком,C++,B2,11,600.0
+232,Frontend Developer,31,9.1,Москва,Бакалавр,Senior,Промышленность,Python,A1,11,437.0
+233,Frontend Developer,33,7.2,Новосибирск,Среднее,Middle,Промышленность,Python,B2,7,270.7
+234,Data Analyst,40,13.6,Уфа,PhD,Lead,Ритейл,Kotlin,C1,13,600.0
+235,Project Manager,25,0.5,Екатеринбург,Магистр,Junior,IT,JavaScript,A2,1,240.6
+236,Cloud Architect,38,13.4,Ростов-на-Дону,PhD,Lead,Телеком,Kotlin,B1,13,600.0
+237,Data Scientist,34,13.5,Ростов-на-Дону,Среднее,Lead,Ритейл,Java,C2,11,600.0
+238,Full Stack Developer,41,17.5,Пермь,Среднее,Architect,E-commerce,Python,A1,15,600.0
+239,Project Manager,32,10.0,Нижний Новгород,Бакалавр,Senior,Образование,Ruby,A1,7,507.5
+240,Backend Developer,40,17.1,Новосибирск,PhD,Architect,Ритейл,JavaScript,B1,16,600.0
+241,Cloud Architect,24,2.4,Казань,Магистр,Junior,Телеком,PHP,B2,2,225.0
+242,DevOps Engineer,24,1.4,Нижний Новгород,Среднее,Junior,Образование,Python,A1,3,105.8
+243,Data Analyst,36,7.6,Волгоград,Бакалавр,Middle,Медицина,Java,B1,8,272.8
+244,QA Engineer,23,1.3,Самара,Среднее,Junior,Образование,C#,C2,3,86.0
+245,QA Engineer,25,2.8,Волгоград,Магистр,Junior,Медицина,Swift,A1,5,136.1
+246,Python Developer,33,8.0,Воронеж,Магистр,Senior,Телеком,Go,C1,7,500.7
+247,Machine Learning Engineer,32,7.4,Воронеж,Магистр,Middle,Телеком,C#,B2,8,407.3
+248,DevOps Engineer,27,7.3,Волгоград,Магистр,Middle,IT,C++,B1,7,356.0
+249,Machine Learning Engineer,46,17.7,Казань,Бакалавр,Architect,IT,PHP,B2,18,600.0
+250,Frontend Developer,36,11.1,Казань,Среднее,Senior,IT,Ruby,B2,10,418.4
+251,Data Analyst,28,5.9,Воронеж,Магистр,Middle,IT,C++,C2,5,236.2
+252,Security Engineer,41,15.4,Воронеж,Магистр,Lead,Финтех,C#,C2,14,600.0
+253,Product Manager,43,16.6,Волгоград,Бакалавр,Architect,IT,PHP,B2,13,600.0
+254,Python Developer,42,17.0,Нижний Новгород,PhD,Architect,E-commerce,Go,C1,14,600.0
+255,Backend Developer,39,10.8,Ростов-на-Дону,Бакалавр,Senior,E-commerce,PHP,C2,10,569.6
+256,Machine Learning Engineer,30,4.4,Екатеринбург,Магистр,Middle,E-commerce,Swift,A1,7,322.4
+257,Data Scientist,29,2.5,Волгоград,Бакалавр,Junior,E-commerce,JavaScript,C1,4,153.8
+258,Project Manager,40,17.4,Самара,Бакалавр,Architect,Промышленность,JavaScript,A2,16,600.0
+259,Cloud Architect,26,4.6,Краснодар,Бакалавр,Middle,Образование,Go,C1,5,394.2
+260,Full Stack Developer,28,4.9,Москва,Бакалавр,Middle,Телеком,Swift,C2,3,271.4
+261,Full Stack Developer,46,17.4,Екатеринбург,Магистр,Architect,Образование,JavaScript,B2,14,600.0
+262,Data Analyst,26,6.2,Санкт-Петербург,Магистр,Middle,Финтех,Ruby,C2,7,266.6
+263,Data Analyst,35,12.8,Нижний Новгород,PhD,Lead,Образование,PHP,A1,11,600.0
+264,Product Manager,37,14.9,Екатеринбург,Бакалавр,Lead,Медицина,JavaScript,B2,11,600.0
+265,Data Scientist,46,17.9,Волгоград,Магистр,Architect,IT,Kotlin,A2,14,600.0
+266,Product Manager,38,12.8,Ростов-на-Дону,MBA,Lead,Ритейл,Python,B2,13,600.0
+267,Frontend Developer,33,9.8,Новосибирск,PhD,Senior,Ритейл,JavaScript,C2,9,522.2
+268,Product Manager,43,17.2,Нижний Новгород,Бакалавр,Architect,Промышленность,Go,B1,13,600.0
+269,Backend Developer,30,4.7,Пермь,Бакалавр,Middle,Госсектор,JavaScript,B1,6,292.8
+270,Product Manager,22,1.5,Ростов-на-Дону,PhD,Junior,IT,Java,C1,4,316.6
+271,Backend Developer,38,15.7,Екатеринбург,Бакалавр,Lead,E-commerce,Go,A1,13,600.0
+272,Software Engineer,41,14.9,Пермь,Магистр,Lead,Госсектор,C++,A2,11,600.0
+273,Python Developer,32,6.6,Самара,MBA,Middle,Ритейл,Go,C1,7,417.2
+274,Data Scientist,21,4.0,Пермь,Магистр,Middle,Образование,Swift,C2,6,313.6
+275,DevOps Engineer,36,11.2,Нижний Новгород,Магистр,Senior,Медицина,PHP,C1,8,592.9
+276,Data Analyst,21,1.8,Самара,Магистр,Junior,Промышленность,Kotlin,B2,4,113.4
+277,Software Engineer,34,5.2,Краснодар,Магистр,Middle,Ритейл,Kotlin,B2,4,305.2
+278,QA Engineer,39,17.0,Екатеринбург,Магистр,Architect,Госсектор,Python,A1,16,600.0
+279,Data Analyst,37,14.6,Ростов-на-Дону,Бакалавр,Lead,Промышленность,C++,B2,15,600.0
+280,Backend Developer,35,8.6,Нижний Новгород,Магистр,Senior,Финтех,Go,C2,10,537.8
+281,Security Engineer,33,11.2,Воронеж,Бакалавр,Senior,Финтех,Python,A1,12,562.8
+282,Project Manager,29,8.1,Ростов-на-Дону,Бакалавр,Senior,Образование,Kotlin,C2,8,482.3
+283,Software Engineer,42,18.4,Воронеж,Среднее,Architect,Финтех,Java,C1,17,600.0
+284,Python Developer,46,19.2,Краснодар,Бакалавр,Architect,IT,Python,B1,18,600.0
+285,Project Manager,46,19.2,Пермь,PhD,Architect,Образование,C#,B2,18,600.0
+286,Data Analyst,41,16.3,Волгоград,Бакалавр,Architect,Медицина,Java,B2,13,600.0
+287,Software Engineer,36,3.5,Новосибирск,Магистр,Junior,E-commerce,C#,C2,5,142.7
+288,Python Developer,35,9.2,Москва,Бакалавр,Senior,Финтех,JavaScript,B2,11,417.8
+289,Python Developer,22,4.2,Уфа,Среднее,Middle,Ритейл,Go,A2,3,253.5
+290,System Administrator,34,8.9,Пермь,Бакалавр,Senior,Телеком,Java,C1,9,430.5
+291,Cloud Architect,42,18.1,Волгоград,Бакалавр,Architect,Промышленность,C++,C1,15,600.0
+292,Software Engineer,28,6.3,Новосибирск,Среднее,Middle,Промышленность,C#,A1,7,244.9
+293,Project Manager,45,16.8,Москва,Магистр,Architect,Телеком,JavaScript,A1,15,600.0
+294,Frontend Developer,27,6.0,Казань,Среднее,Middle,Ритейл,Go,C2,4,255.1
+295,QA Engineer,30,4.4,Казань,MBA,Middle,Телеком,C++,A1,5,258.6
+296,QA Engineer,33,6.4,Краснодар,Бакалавр,Middle,Промышленность,Go,B2,7,226.5
+297,Backend Developer,37,8.2,Ростов-на-Дону,Магистр,Senior,IT,JavaScript,C2,7,514.6
+298,Project Manager,30,12.8,Москва,Бакалавр,Lead,Ритейл,Go,A1,14,600.0
+299,Machine Learning Engineer,34,7.7,Ростов-на-Дону,PhD,Middle,IT,Ruby,C1,7,447.7
+300,Data Scientist,39,16.2,Пермь,MBA,Architect,Телеком,Python,A1,14,600.0
+301,Python Developer,33,6.6,Уфа,Среднее,Middle,IT,C++,B1,7,223.9
+302,Security Engineer,42,16.9,Казань,Магистр,Architect,IT,Python,B1,13,600.0
+303,Frontend Developer,38,14.5,Екатеринбург,Бакалавр,Lead,Медицина,Kotlin,A1,13,600.0
+304,Product Manager,30,6.2,Новосибирск,Бакалавр,Middle,Финтех,JavaScript,B1,6,341.1
+305,DevOps Engineer,38,13.6,Москва,Бакалавр,Lead,Образование,Python,C2,13,600.0
+306,Software Engineer,38,17.6,Казань,Бакалавр,Architect,Финтех,Java,C2,14,600.0
+307,Security Engineer,31,7.8,Уфа,Магистр,Middle,Медицина,Go,C1,8,413.9
+308,System Administrator,30,6.8,Ростов-на-Дону,Бакалавр,Middle,Образование,C#,B2,6,247.3
+309,Data Scientist,33,14.2,Новосибирск,Бакалавр,Lead,Финтех,JavaScript,A1,12,600.0
+310,Product Manager,33,11.2,Екатеринбург,Бакалавр,Senior,E-commerce,Swift,C2,11,557.3
+311,DevOps Engineer,30,2.3,Москва,Бакалавр,Junior,Госсектор,Kotlin,A1,3,171.5
+312,Software Engineer,41,10.8,Екатеринбург,PhD,Senior,Финтех,PHP,C2,12,556.2
+313,Security Engineer,37,13.8,Самара,Бакалавр,Lead,Медицина,Java,A1,14,600.0
+314,Software Engineer,43,16.9,Новосибирск,Бакалавр,Architect,Медицина,Go,A2,15,600.0
+315,Project Manager,25,2.1,Уфа,Магистр,Junior,IT,Kotlin,B1,3,195.7
+316,Project Manager,39,12.9,Казань,Бакалавр,Lead,Финтех,Python,A1,13,600.0
+317,Data Analyst,26,7.4,Санкт-Петербург,Магистр,Middle,Госсектор,Ruby,A2,6,356.0
+318,Cloud Architect,42,16.5,Самара,Магистр,Architect,IT,PHP,B1,15,600.0
+319,Software Engineer,25,4.5,Уфа,PhD,Middle,Образование,Swift,A2,7,334.8
+320,Data Scientist,39,12.8,Санкт-Петербург,Бакалавр,Lead,Финтех,C#,B2,13,600.0
+321,Cloud Architect,28,6.2,Пермь,Магистр,Middle,IT,Go,B2,8,451.3
+322,Full Stack Developer,39,14.4,Самара,Бакалавр,Lead,Образование,C#,A1,15,600.0
+323,Data Scientist,44,17.7,Краснодар,Бакалавр,Architect,Ритейл,PHP,A2,17,600.0
+324,Frontend Developer,38,15.0,Самара,Бакалавр,Lead,Телеком,Python,A2,12,600.0
+325,Python Developer,28,6.7,Ростов-на-Дону,Магистр,Middle,Госсектор,Ruby,B1,5,346.3
+326,Software Engineer,23,3.6,Нижний Новгород,Бакалавр,Junior,Финтех,JavaScript,C1,6,161.1
+327,Security Engineer,24,3.6,Воронеж,Бакалавр,Junior,Телеком,Kotlin,B2,2,145.4
+328,Full Stack Developer,25,5.3,Москва,Магистр,Middle,E-commerce,Swift,A1,8,291.5
+329,Machine Learning Engineer,36,14.1,Волгоград,Бакалавр,Lead,IT,JavaScript,C1,11,600.0
+330,Frontend Developer,22,2.8,Новосибирск,Бакалавр,Junior,Телеком,Kotlin,A1,6,131.3
+331,QA Engineer,33,10.4,Казань,PhD,Senior,Ритейл,Java,C1,10,600.0
+332,Backend Developer,43,14.6,Ростов-на-Дону,PhD,Lead,Телеком,Java,C2,13,600.0
+333,Security Engineer,33,10.5,Новосибирск,Среднее,Senior,Финтех,PHP,A2,8,476.0
+334,Data Analyst,45,17.6,Волгоград,Магистр,Architect,Госсектор,JavaScript,A2,14,600.0
+335,Cloud Architect,25,5.0,Самара,Магистр,Middle,Финтех,C++,B1,7,393.9
+336,Security Engineer,46,16.9,Самара,Бакалавр,Architect,Образование,C++,A1,13,600.0
+337,System Administrator,34,7.3,Ростов-на-Дону,Бакалавр,Middle,Госсектор,Ruby,B2,8,273.5
+338,System Administrator,28,3.6,Самара,PhD,Junior,Госсектор,C#,C2,6,139.6
+339,Data Analyst,37,12.0,Санкт-Петербург,Магистр,Senior,Финтех,Python,A2,11,510.3
+340,Product Manager,34,9.2,Новосибирск,Бакалавр,Senior,IT,Java,C2,7,600.0
+341,Security Engineer,30,5.8,Екатеринбург,Магистр,Middle,Телеком,Ruby,C1,5,322.0
+342,Full Stack Developer,27,4.2,Нижний Новгород,Бакалавр,Middle,Образование,C#,C2,3,251.8
+343,Machine Learning Engineer,44,16.6,Краснодар,PhD,Architect,Промышленность,PHP,C1,15,600.0
+344,System Administrator,40,16.6,Воронеж,Среднее,Architect,E-commerce,C++,B2,15,600.0
+345,System Administrator,28,9.6,Нижний Новгород,MBA,Senior,Образование,C#,B1,9,542.3
+346,Machine Learning Engineer,19,0.8,Волгоград,Среднее,Junior,E-commerce,C#,C1,2,171.4
+347,Software Engineer,28,1.9,Краснодар,Бакалавр,Junior,Промышленность,C++,B1,1,153.9
+348,Project Manager,45,18.6,Нижний Новгород,MBA,Architect,IT,JavaScript,B2,17,600.0
+349,QA Engineer,37,14.4,Казань,Магистр,Lead,Образование,PHP,B1,12,600.0
+350,Full Stack Developer,41,14.0,Нижний Новгород,Бакалавр,Lead,Госсектор,Python,B2,14,600.0
+351,Data Scientist,37,13.5,Екатеринбург,Магистр,Lead,Госсектор,PHP,C2,12,600.0
+352,Machine Learning Engineer,41,13.0,Уфа,Среднее,Lead,Госсектор,PHP,B2,12,600.0
+353,DevOps Engineer,20,1.1,Воронеж,Бакалавр,Junior,Промышленность,Ruby,C1,2,144.9
+354,Project Manager,42,14.9,Уфа,Среднее,Lead,Образование,Python,A1,12,600.0
+355,Security Engineer,23,3.0,Воронеж,Магистр,Junior,Финтех,Java,C2,3,152.1
+356,Data Scientist,32,8.6,Новосибирск,PhD,Senior,Образование,C#,B2,9,579.2
+357,Security Engineer,25,3.7,Москва,Бакалавр,Junior,Медицина,Kotlin,B2,5,161.5
+358,System Administrator,30,6.4,Пермь,Бакалавр,Middle,Образование,Ruby,B1,6,253.4
+359,Backend Developer,37,15.7,Ростов-на-Дону,Бакалавр,Lead,Телеком,Python,A2,12,600.0
+360,QA Engineer,25,6.0,Москва,Магистр,Middle,Ритейл,Kotlin,C1,4,279.8
+361,Data Analyst,31,7.7,Новосибирск,Бакалавр,Middle,Финтех,Ruby,A1,8,218.6
+362,Full Stack Developer,40,14.1,Новосибирск,PhD,Lead,Ритейл,C#,C2,11,600.0
+363,Product Manager,30,10.0,Уфа,Бакалавр,Senior,Образование,Go,C2,10,596.0
+364,Security Engineer,34,17.2,Новосибирск,Магистр,Architect,E-commerce,Go,C2,13,600.0
+365,Project Manager,32,7.1,Екатеринбург,Магистр,Middle,Телеком,C#,A2,5,399.8
+366,Cloud Architect,30,5.6,Москва,Бакалавр,Middle,Промышленность,Python,C1,4,410.8
+367,QA Engineer,30,5.1,Краснодар,Бакалавр,Middle,Финтех,Swift,C1,4,213.0
+368,Backend Developer,31,8.9,Уфа,Магистр,Senior,E-commerce,Ruby,A1,11,536.1
+369,DevOps Engineer,42,13.6,Ростов-на-Дону,Магистр,Lead,Госсектор,Swift,B2,10,600.0
+370,Cloud Architect,26,3.6,Пермь,Магистр,Junior,IT,Swift,B1,2,227.8
+371,Project Manager,45,16.1,Уфа,Бакалавр,Architect,Телеком,C#,C1,13,600.0
+372,Data Analyst,31,8.1,Казань,Бакалавр,Senior,E-commerce,PHP,A1,8,385.6
+373,Data Scientist,37,13.5,Краснодар,Магистр,Lead,Образование,JavaScript,C2,13,600.0
+374,Machine Learning Engineer,36,10.4,Екатеринбург,Бакалавр,Senior,Телеком,Python,A1,9,583.6
+375,Product Manager,42,19.8,Уфа,Бакалавр,Architect,IT,Kotlin,A2,15,600.0
+376,Cloud Architect,45,19.7,Волгоград,Бакалавр,Architect,Ритейл,PHP,C2,18,600.0
+377,Cloud Architect,33,10.3,Уфа,Магистр,Senior,Образование,Java,B1,9,600.0
+378,Machine Learning Engineer,42,15.3,Краснодар,PhD,Lead,Медицина,C++,B2,13,600.0
+379,Full Stack Developer,29,6.3,Екатеринбург,Бакалавр,Middle,Госсектор,C++,A1,5,267.9
+380,Frontend Developer,34,14.8,Самара,Бакалавр,Lead,Образование,C#,A1,11,600.0
+381,Backend Developer,47,18.1,Уфа,PhD,Architect,Телеком,Java,C2,17,600.0
+382,Machine Learning Engineer,34,8.5,Казань,Бакалавр,Senior,Телеком,Kotlin,C1,10,506.9
+383,Frontend Developer,25,2.8,Волгоград,Магистр,Junior,Промышленность,Ruby,A2,4,195.3
+384,Cloud Architect,34,11.4,Краснодар,MBA,Senior,Медицина,PHP,A2,13,600.0
+385,Software Engineer,34,14.0,Казань,Бакалавр,Lead,IT,Go,A2,12,600.0
+386,Backend Developer,29,9.8,Москва,Бакалавр,Senior,Госсектор,Python,C2,8,600.0
+387,Machine Learning Engineer,31,4.8,Пермь,Бакалавр,Middle,Госсектор,C#,B1,3,300.7
+388,Frontend Developer,45,18.7,Екатеринбург,Бакалавр,Architect,IT,JavaScript,A2,16,600.0
+389,Software Engineer,38,14.4,Новосибирск,Магистр,Lead,E-commerce,Java,A1,14,600.0
+390,DevOps Engineer,38,11.2,Санкт-Петербург,Магистр,Senior,IT,Ruby,B1,8,571.6
+391,Machine Learning Engineer,36,7.4,Самара,Магистр,Middle,Финтех,C++,C1,8,372.8
+392,Cloud Architect,22,2.4,Волгоград,Среднее,Junior,Ритейл,Java,A2,4,154.6
+393,Machine Learning Engineer,24,2.3,Нижний Новгород,Бакалавр,Junior,Промышленность,Ruby,C1,2,174.2
+394,QA Engineer,28,5.1,Самара,PhD,Middle,Медицина,Swift,C1,5,254.3
+395,Backend Developer,29,6.8,Екатеринбург,Бакалавр,Middle,Госсектор,Go,A1,7,321.5
+396,Full Stack Developer,33,5.7,Краснодар,Бакалавр,Middle,E-commerce,Swift,A1,6,385.0
+397,System Administrator,29,4.8,Самара,Бакалавр,Middle,Ритейл,Kotlin,C2,3,192.8
+398,Security Engineer,34,8.2,Нижний Новгород,Бакалавр,Senior,Телеком,C#,C1,8,498.1
+399,Full Stack Developer,25,5.7,Санкт-Петербург,PhD,Middle,E-commerce,Python,B1,6,364.9
+400,Frontend Developer,36,14.8,Санкт-Петербург,Бакалавр,Lead,Промышленность,Ruby,C2,14,600.0
+401,Full Stack Developer,21,3.1,Москва,Бакалавр,Junior,Промышленность,Python,C1,4,173.4
+402,DevOps Engineer,35,16.4,Екатеринбург,Среднее,Architect,Образование,Ruby,C1,14,600.0
+403,System Administrator,32,7.0,Волгоград,Магистр,Middle,Медицина,Ruby,B2,9,245.4
+404,Software Engineer,25,5.7,Волгоград,PhD,Middle,Госсектор,Java,A2,8,295.2
+405,System Administrator,26,7.2,Ростов-на-Дону,Бакалавр,Middle,Медицина,Swift,B2,8,235.0
+406,Data Scientist,33,8.2,Самара,Магистр,Senior,Ритейл,JavaScript,C1,10,535.4
+407,QA Engineer,38,10.3,Екатеринбург,Магистр,Senior,Финтех,JavaScript,B1,12,428.7
+408,Data Scientist,33,6.9,Екатеринбург,Бакалавр,Middle,Телеком,Ruby,C1,5,321.9
+409,QA Engineer,34,10.7,Краснодар,Бакалавр,Senior,Финтех,C#,A2,11,357.7
+410,QA Engineer,41,17.4,Пермь,Магистр,Architect,Госсектор,Python,A2,14,600.0
+411,Security Engineer,33,7.9,Казань,Магистр,Middle,Госсектор,Go,A2,6,525.4
+412,System Administrator,34,12.3,Самара,PhD,Lead,Ритейл,Kotlin,A1,9,600.0
+413,Data Scientist,46,16.9,Санкт-Петербург,Магистр,Architect,Образование,JavaScript,A1,15,600.0
+414,Product Manager,26,3.7,Нижний Новгород,Бакалавр,Junior,Промышленность,Kotlin,B2,3,210.1
+415,Backend Developer,40,14.4,Санкт-Петербург,Магистр,Lead,Госсектор,C++,B2,11,600.0
+416,Machine Learning Engineer,27,5.4,Нижний Новгород,Бакалавр,Middle,IT,Ruby,C2,6,319.9
+417,System Administrator,41,16.8,Новосибирск,PhD,Architect,IT,Python,C1,15,600.0
+418,Product Manager,28,5.5,Волгоград,MBA,Middle,Госсектор,C#,A1,6,406.3
+419,Cloud Architect,39,11.2,Краснодар,Бакалавр,Senior,Телеком,C++,B2,8,562.6
+420,Cloud Architect,43,19.5,Москва,Магистр,Architect,IT,Kotlin,C1,15,600.0
+421,Data Scientist,34,13.6,Пермь,Магистр,Lead,Медицина,C#,B1,12,600.0
+422,System Administrator,27,5.5,Пермь,Среднее,Middle,Медицина,Swift,C2,6,240.5
+423,Cloud Architect,35,12.5,Волгоград,MBA,Lead,Ритейл,Kotlin,B1,12,600.0
+424,DevOps Engineer,35,13.2,Воронеж,Бакалавр,Lead,E-commerce,Go,A2,12,600.0
+425,Backend Developer,31,5.4,Уфа,MBA,Middle,Телеком,C++,C2,6,423.2
+426,Project Manager,41,18.2,Волгоград,Магистр,Architect,Ритейл,PHP,A1,18,600.0
+427,System Administrator,42,14.2,Краснодар,Магистр,Lead,Телеком,Go,A1,12,600.0
+428,Data Scientist,36,11.9,Пермь,Бакалавр,Senior,IT,Java,C2,12,543.3
+429,Machine Learning Engineer,29,9.3,Екатеринбург,Бакалавр,Senior,Госсектор,C#,C2,8,484.1
+430,Full Stack Developer,30,8.6,Санкт-Петербург,Бакалавр,Senior,Госсектор,Swift,C1,7,591.7
+431,Project Manager,29,7.1,Екатеринбург,Магистр,Middle,IT,Go,A2,7,384.8
+432,Full Stack Developer,37,12.1,Воронеж,PhD,Lead,Ритейл,C++,B1,10,600.0
+433,Data Scientist,27,3.9,Самара,Бакалавр,Junior,Телеком,Python,C2,7,215.1
+434,Software Engineer,41,16.7,Краснодар,PhD,Architect,IT,Kotlin,C1,14,600.0
+435,Cloud Architect,44,17.6,Нижний Новгород,PhD,Architect,Телеком,C#,B2,15,600.0
+436,Software Engineer,37,17.5,Новосибирск,Среднее,Architect,Телеком,Go,A2,17,600.0
+437,Project Manager,34,9.5,Санкт-Петербург,Бакалавр,Senior,Медицина,C++,B1,9,501.8
+438,Python Developer,34,10.3,Пермь,Среднее,Senior,E-commerce,Ruby,B2,10,433.3
+439,Full Stack Developer,35,9.8,Воронеж,Бакалавр,Senior,E-commerce,Ruby,C1,8,480.0
+440,Machine Learning Engineer,41,15.0,Екатеринбург,Магистр,Lead,Медицина,Java,A2,13,600.0
+441,Machine Learning Engineer,24,1.7,Краснодар,PhD,Junior,Телеком,C#,A1,4,200.3
+442,Backend Developer,42,16.5,Пермь,Бакалавр,Architect,Ритейл,Swift,A2,13,600.0
+443,Python Developer,43,16.0,Волгоград,Среднее,Architect,Финтех,Swift,A2,16,600.0
+444,Project Manager,26,0.6,Ростов-на-Дону,Бакалавр,Junior,Финтех,Python,B2,3,197.2
+445,Machine Learning Engineer,46,19.4,Санкт-Петербург,Бакалавр,Architect,Финтех,C++,C2,15,600.0
+446,Data Scientist,35,12.0,Новосибирск,Бакалавр,Senior,E-commerce,Ruby,B1,9,522.5
+447,Full Stack Developer,28,5.2,Краснодар,Бакалавр,Middle,Промышленность,Ruby,C2,6,275.2
+448,Backend Developer,25,4.3,Москва,Бакалавр,Middle,Образование,C++,C1,6,272.7
+449,QA Engineer,41,17.9,Пермь,Магистр,Architect,E-commerce,Go,C2,17,600.0
+450,Product Manager,40,19.9,Воронеж,Бакалавр,Architect,Телеком,Ruby,B1,17,600.0
+451,Security Engineer,40,18.8,Уфа,Бакалавр,Architect,E-commerce,JavaScript,B1,17,600.0
+452,QA Engineer,33,9.7,Уфа,Магистр,Senior,IT,C#,A2,7,429.2
+453,Full Stack Developer,27,6.7,Нижний Новгород,Бакалавр,Middle,Госсектор,Swift,C1,7,345.9
+454,System Administrator,28,6.7,Новосибирск,Магистр,Middle,IT,PHP,C1,8,334.5
+455,DevOps Engineer,25,5.9,Ростов-на-Дону,Бакалавр,Middle,Госсектор,Java,B1,8,289.5
+456,Machine Learning Engineer,25,5.5,Волгоград,Бакалавр,Middle,Госсектор,Swift,C1,5,307.7
+457,Frontend Developer,30,8.8,Пермь,Магистр,Senior,Промышленность,C++,A2,7,484.6
+458,DevOps Engineer,26,7.5,Новосибирск,Бакалавр,Middle,Ритейл,C++,A1,7,337.9
+459,DevOps Engineer,42,14.3,Ростов-на-Дону,PhD,Lead,Промышленность,Kotlin,C1,12,600.0
+460,Machine Learning Engineer,24,1.5,Екатеринбург,Бакалавр,Junior,Промышленность,Kotlin,C1,5,165.7
+461,System Administrator,40,13.7,Краснодар,Бакалавр,Lead,E-commerce,Ruby,C1,13,600.0
+462,Frontend Developer,37,15.4,Новосибирск,Магистр,Lead,E-commerce,Kotlin,C2,15,600.0
+463,Data Scientist,30,4.5,Пермь,Среднее,Middle,Телеком,C++,A1,3,233.2
+464,Machine Learning Engineer,37,17.0,Самара,Бакалавр,Architect,IT,C++,B1,14,600.0
+465,Cloud Architect,45,18.6,Волгоград,PhD,Architect,Ритейл,Ruby,C2,15,600.0
+466,Full Stack Developer,34,10.3,Новосибирск,Среднее,Senior,Образование,Go,C1,10,585.8
+467,Backend Developer,40,13.4,Уфа,PhD,Lead,Промышленность,Python,C1,10,600.0
+468,Backend Developer,28,5.4,Краснодар,Магистр,Middle,Ритейл,Go,B2,6,341.4
+469,Project Manager,38,16.8,Новосибирск,Магистр,Architect,Медицина,Java,C1,13,600.0
+470,Cloud Architect,26,2.6,Краснодар,Бакалавр,Junior,Финтех,PHP,B2,2,216.6
+471,Data Scientist,28,6.5,Уфа,Магистр,Middle,Промышленность,Swift,A2,7,409.1
+472,System Administrator,25,3.2,Санкт-Петербург,Среднее,Junior,Финтех,Swift,C1,5,149.8
+473,Backend Developer,31,9.5,Волгоград,Бакалавр,Senior,Медицина,Swift,C2,11,449.7
+474,Frontend Developer,33,8.5,Краснодар,Бакалавр,Senior,Финтех,C++,C1,7,430.6
+475,Security Engineer,36,12.1,Ростов-на-Дону,Среднее,Lead,Финтех,C#,A2,9,600.0
+476,Software Engineer,30,11.3,Краснодар,Магистр,Senior,IT,Python,A2,11,596.0
+477,Cloud Architect,32,8.9,Краснодар,Бакалавр,Senior,Медицина,Kotlin,A1,7,536.4
+478,Product Manager,49,19.9,Санкт-Петербург,Бакалавр,Architect,Телеком,Kotlin,A1,19,600.0
+479,Backend Developer,22,0.7,Нижний Новгород,Бакалавр,Junior,IT,Ruby,C2,1,164.9
+480,DevOps Engineer,42,19.8,Уфа,MBA,Architect,Госсектор,Go,B2,17,600.0
+481,Data Analyst,27,6.5,Новосибирск,Бакалавр,Middle,Госсектор,Ruby,B2,5,217.6
+482,Project Manager,37,18.2,Москва,MBA,Architect,Госсектор,Ruby,A2,15,600.0
+483,Security Engineer,35,13.6,Казань,Среднее,Lead,Госсектор,Python,B2,11,600.0
+484,Frontend Developer,31,3.9,Самара,PhD,Junior,IT,Python,B2,4,198.7
+485,Software Engineer,41,16.2,Санкт-Петербург,Бакалавр,Architect,Финтех,Ruby,B1,15,600.0
+486,System Administrator,34,9.2,Новосибирск,Магистр,Senior,Финтех,Kotlin,C2,11,482.0
+487,Backend Developer,31,8.6,Санкт-Петербург,Бакалавр,Senior,Телеком,C#,C1,6,434.4
+488,QA Engineer,25,2.6,Санкт-Петербург,Магистр,Junior,IT,Ruby,C1,4,134.0
+489,Software Engineer,37,10.9,Краснодар,Среднее,Senior,Телеком,C++,C2,8,426.9
+490,QA Engineer,35,12.1,Пермь,Бакалавр,Lead,Промышленность,Kotlin,B1,11,600.0
+491,Software Engineer,37,10.8,Ростов-на-Дону,Бакалавр,Senior,Телеком,JavaScript,C1,11,549.4
+492,Product Manager,19,1.0,Ростов-на-Дону,Магистр,Junior,Промышленность,C#,C2,2,214.9
+493,Data Analyst,22,4.5,Екатеринбург,Бакалавр,Middle,IT,PHP,A1,6,247.5
+494,Python Developer,27,3.7,Самара,Магистр,Junior,Медицина,Python,A2,6,229.9
+495,Frontend Developer,37,12.2,Пермь,MBA,Lead,Ритейл,PHP,B1,12,600.0
+496,System Administrator,24,5.5,Пермь,PhD,Middle,IT,Kotlin,A2,4,293.3
+497,Data Scientist,36,16.7,Новосибирск,Бакалавр,Architect,Промышленность,Python,A2,15,600.0
+498,DevOps Engineer,36,15.9,Самара,PhD,Lead,Госсектор,Python,A1,12,600.0
+499,QA Engineer,43,11.9,Краснодар,Магистр,Senior,IT,Kotlin,A2,11,457.6
+500,QA Engineer,20,1.0,Самара,Бакалавр,Junior,IT,Python,B2,1,107.3
+501,System Administrator,40,12.6,Краснодар,Бакалавр,Lead,Телеком,Kotlin,A1,11,600.0
+502,Python Developer,38,16.9,Новосибирск,Бакалавр,Architect,Финтех,C++,C2,14,600.0
+503,Product Manager,36,13.1,Нижний Новгород,Магистр,Lead,Медицина,PHP,B1,12,600.0
+504,Project Manager,41,17.1,Краснодар,Бакалавр,Architect,Образование,Kotlin,C1,15,600.0
+505,Frontend Developer,24,2.8,Уфа,Магистр,Junior,E-commerce,Go,A2,2,162.2
+506,Full Stack Developer,45,19.1,Москва,Бакалавр,Architect,IT,Kotlin,A2,15,600.0
+507,Machine Learning Engineer,37,6.4,Ростов-на-Дону,Бакалавр,Middle,Медицина,C#,C2,6,352.8
+508,Data Scientist,39,14.7,Ростов-на-Дону,Бакалавр,Lead,Финтех,Swift,B2,13,600.0
+509,Data Analyst,30,6.0,Волгоград,Бакалавр,Middle,Госсектор,Kotlin,B2,7,213.4
+510,Data Scientist,23,5.9,Нижний Новгород,PhD,Middle,Госсектор,Python,A2,4,435.8
+511,Backend Developer,45,17.3,Самара,Магистр,Architect,Промышленность,Go,B1,14,600.0
+512,Data Analyst,28,7.1,Ростов-на-Дону,Бакалавр,Middle,Медицина,PHP,B2,6,222.6
+513,Product Manager,28,5.2,Краснодар,Среднее,Middle,Финтех,Swift,B1,5,254.5
+514,Software Engineer,23,1.5,Екатеринбург,Бакалавр,Junior,E-commerce,C#,A2,1,144.5
+515,Machine Learning Engineer,30,11.8,Краснодар,Бакалавр,Senior,Медицина,C#,A2,12,573.1
+516,Python Developer,50,19.3,Краснодар,Магистр,Architect,Госсектор,Java,A2,19,600.0
+517,Python Developer,21,2.4,Новосибирск,Магистр,Junior,E-commerce,Go,C1,2,181.4
+518,QA Engineer,35,10.5,Пермь,Магистр,Senior,Финтех,C#,C2,9,438.3
+519,Cloud Architect,38,13.8,Казань,Магистр,Lead,Медицина,C#,C1,11,600.0
+520,System Administrator,31,5.8,Нижний Новгород,Магистр,Middle,IT,C++,C1,6,267.7
+521,DevOps Engineer,26,4.9,Краснодар,Бакалавр,Middle,Промышленность,Python,B1,7,309.1
+522,System Administrator,27,3.0,Пермь,Магистр,Junior,Образование,Kotlin,A1,6,137.0
+523,Python Developer,27,2.2,Санкт-Петербург,PhD,Junior,Телеком,JavaScript,C2,5,183.3
+524,QA Engineer,39,10.0,Воронеж,Магистр,Senior,Ритейл,Java,A2,12,415.3
+525,Cloud Architect,39,14.9,Ростов-на-Дону,Бакалавр,Lead,Телеком,JavaScript,B2,14,600.0
+526,Product Manager,32,5.2,Ростов-на-Дону,Магистр,Middle,Медицина,Ruby,A2,4,441.6
+527,System Administrator,41,12.4,Краснодар,Бакалавр,Lead,IT,Kotlin,A1,10,600.0
+528,Project Manager,26,1.6,Ростов-на-Дону,Магистр,Junior,Медицина,Python,B1,4,208.2
+529,Full Stack Developer,28,5.5,Волгоград,Магистр,Middle,Медицина,Kotlin,A1,4,348.1
+530,Security Engineer,29,8.0,Казань,Бакалавр,Senior,Медицина,Kotlin,C2,9,462.1
+531,Cloud Architect,39,16.5,Волгоград,Бакалавр,Architect,Финтех,Java,C2,17,600.0
+532,Security Engineer,28,3.0,Воронеж,Бакалавр,Junior,Финтех,C#,B2,5,151.9
+533,Data Scientist,30,7.2,Воронеж,PhD,Middle,E-commerce,Kotlin,C2,6,406.8
+534,Frontend Developer,21,2.4,Ростов-на-Дону,Среднее,Junior,Медицина,C#,A2,1,142.7
+535,System Administrator,39,18.7,Самара,Бакалавр,Architect,Госсектор,Python,B2,14,600.0
+536,Software Engineer,46,17.9,Санкт-Петербург,Среднее,Architect,Госсектор,C#,C1,14,600.0
+537,Software Engineer,29,5.9,Краснодар,Бакалавр,Middle,Медицина,Go,C1,8,280.7
+538,DevOps Engineer,25,2.7,Москва,Бакалавр,Junior,Финтех,Python,A1,6,197.0
+539,Machine Learning Engineer,44,19.0,Москва,Среднее,Architect,Образование,C++,B1,16,600.0
+540,Full Stack Developer,42,17.4,Санкт-Петербург,Магистр,Architect,IT,Java,B2,13,600.0
+541,Security Engineer,39,15.6,Воронеж,Магистр,Lead,E-commerce,Java,C2,15,600.0
+542,System Administrator,39,16.3,Нижний Новгород,Бакалавр,Architect,Финтех,Ruby,B2,15,600.0
+543,Security Engineer,27,2.1,Санкт-Петербург,Магистр,Junior,Телеком,PHP,C2,4,264.3
+544,DevOps Engineer,18,2.3,Казань,Бакалавр,Junior,Медицина,Java,A2,3,138.1
+545,Full Stack Developer,39,19.3,Уфа,Бакалавр,Architect,Ритейл,Go,B2,18,600.0
+546,Python Developer,40,15.1,Екатеринбург,Магистр,Lead,Телеком,Kotlin,A1,15,600.0
+547,Security Engineer,21,0.6,Самара,Среднее,Junior,E-commerce,Go,C1,1,168.2
+548,Security Engineer,34,8.2,Самара,Бакалавр,Senior,E-commerce,Go,C2,8,600.0
+549,Machine Learning Engineer,19,1.8,Екатеринбург,PhD,Junior,Госсектор,Ruby,A1,2,214.4
+550,Machine Learning Engineer,29,8.5,Новосибирск,Бакалавр,Senior,E-commerce,PHP,B1,9,519.2
+551,DevOps Engineer,27,5.2,Волгоград,Бакалавр,Middle,Госсектор,C++,C2,8,273.1
+552,Python Developer,28,4.1,Воронеж,Магистр,Middle,Госсектор,C++,B2,4,266.1
+553,Cloud Architect,26,3.2,Казань,PhD,Junior,Промышленность,Swift,A1,6,258.7
+554,QA Engineer,27,3.5,Краснодар,Бакалавр,Junior,Образование,Kotlin,B1,6,151.0
+555,Data Analyst,34,11.2,Екатеринбург,Бакалавр,Senior,Ритейл,Go,A1,9,485.7
+556,Data Scientist,25,5.5,Нижний Новгород,Бакалавр,Middle,Госсектор,Ruby,B1,8,390.4
+557,Data Scientist,40,18.0,Москва,PhD,Architect,Госсектор,Python,B2,18,600.0
+558,Data Scientist,35,10.8,Пермь,Бакалавр,Senior,Финтех,Kotlin,B1,9,512.6
+559,Full Stack Developer,26,3.7,Екатеринбург,PhD,Junior,Промышленность,C#,C1,5,222.1
+560,System Administrator,22,2.0,Самара,Бакалавр,Junior,E-commerce,JavaScript,C1,4,115.7
+561,Software Engineer,43,18.7,Москва,Бакалавр,Architect,Госсектор,C++,B1,18,600.0
+562,QA Engineer,22,2.0,Москва,Среднее,Junior,E-commerce,JavaScript,B1,3,84.7
+563,Machine Learning Engineer,36,13.2,Ростов-на-Дону,PhD,Lead,Финтех,Kotlin,C1,13,600.0
+564,Data Scientist,34,9.6,Новосибирск,Магистр,Senior,Образование,Go,A1,7,600.0
+565,Security Engineer,44,16.4,Новосибирск,Бакалавр,Architect,Медицина,Python,C1,15,600.0
+566,Cloud Architect,38,17.9,Воронеж,Магистр,Architect,Госсектор,Kotlin,C2,15,600.0
+567,Security Engineer,42,18.8,Уфа,Бакалавр,Architect,Медицина,Go,C1,17,600.0
+568,Data Analyst,36,17.0,Нижний Новгород,Магистр,Architect,Образование,C++,C1,16,600.0
+569,Backend Developer,41,19.0,Ростов-на-Дону,Бакалавр,Architect,Ритейл,Python,A1,19,600.0
+570,Cloud Architect,45,19.9,Казань,Магистр,Architect,Телеком,PHP,C1,18,600.0
+571,QA Engineer,33,7.4,Нижний Новгород,Среднее,Middle,E-commerce,C++,A1,6,282.8
+572,Backend Developer,40,11.8,Екатеринбург,PhD,Senior,Телеком,Go,C1,12,600.0
+573,Data Analyst,25,6.1,Краснодар,Среднее,Middle,Промышленность,Swift,B1,8,287.9
+574,Backend Developer,37,12.6,Москва,Магистр,Lead,E-commerce,C++,B1,13,600.0
+575,Backend Developer,37,18.0,Казань,Магистр,Architect,E-commerce,C++,B1,16,600.0
+576,System Administrator,42,19.7,Пермь,Магистр,Architect,Телеком,Ruby,B1,17,600.0
+577,Python Developer,44,18.0,Екатеринбург,Бакалавр,Architect,IT,JavaScript,C1,17,600.0
+578,Product Manager,25,4.2,Казань,Бакалавр,Middle,E-commerce,Java,A1,4,297.2
+579,Backend Developer,35,9.3,Санкт-Петербург,Среднее,Senior,Ритейл,C#,A2,10,414.1
+580,Data Scientist,38,11.0,Пермь,Бакалавр,Senior,E-commerce,C#,A1,9,544.6
+581,Software Engineer,29,8.8,Санкт-Петербург,MBA,Senior,E-commerce,Java,B2,8,547.1
+582,Software Engineer,40,15.7,Москва,Бакалавр,Lead,IT,Java,C1,15,600.0
+583,Frontend Developer,40,17.6,Ростов-на-Дону,Бакалавр,Architect,Госсектор,JavaScript,C2,14,600.0
+584,Data Analyst,37,15.9,Санкт-Петербург,Среднее,Lead,Госсектор,Java,B1,14,600.0
+585,System Administrator,35,11.8,Санкт-Петербург,MBA,Senior,Образование,PHP,B2,13,600.0
+586,Backend Developer,44,19.8,Ростов-на-Дону,Бакалавр,Architect,Ритейл,Java,A2,16,600.0
+587,QA Engineer,33,8.3,Санкт-Петербург,PhD,Senior,Госсектор,Ruby,A1,8,387.1
+588,Software Engineer,40,13.3,Самара,PhD,Lead,Промышленность,Kotlin,B2,11,600.0
+589,Project Manager,31,7.5,Ростов-на-Дону,Магистр,Middle,Промышленность,Java,A2,10,406.1
+590,Frontend Developer,33,7.2,Самара,Магистр,Middle,Финтех,Ruby,A2,7,308.9
+591,Frontend Developer,37,12.7,Ростов-на-Дону,Бакалавр,Lead,Ритейл,PHP,A2,12,600.0
+592,Machine Learning Engineer,41,17.1,Самара,Среднее,Architect,Телеком,Java,A2,14,600.0
+593,Product Manager,44,14.5,Самара,Магистр,Lead,Образование,PHP,C1,14,600.0
+594,Frontend Developer,40,11.8,Казань,Магистр,Senior,Телеком,JavaScript,A2,9,547.7
+595,Python Developer,42,9.9,Уфа,PhD,Senior,Финтех,Go,A2,8,600.0
+596,Project Manager,37,14.5,Новосибирск,PhD,Lead,Госсектор,Ruby,B2,12,600.0
+597,Machine Learning Engineer,23,3.0,Ростов-на-Дону,Бакалавр,Junior,Медицина,Ruby,B1,6,176.2
+598,Data Scientist,41,17.1,Санкт-Петербург,PhD,Architect,Телеком,Java,B1,13,600.0
+599,Software Engineer,22,3.9,Волгоград,MBA,Junior,Ритейл,JavaScript,B2,6,212.7
+600,Data Scientist,19,1.0,Пермь,MBA,Junior,Ритейл,Java,C2,1,194.7
+601,Project Manager,32,7.6,Уфа,Бакалавр,Middle,E-commerce,Go,B1,7,399.7
+602,QA Engineer,39,15.9,Ростов-на-Дону,Бакалавр,Lead,IT,Go,C1,12,600.0
+603,Frontend Developer,42,17.0,Екатеринбург,Среднее,Architect,E-commerce,PHP,A2,13,600.0
+604,Product Manager,42,16.4,Воронеж,Бакалавр,Architect,IT,C#,B1,15,600.0
+605,Data Scientist,40,11.0,Санкт-Петербург,MBA,Senior,Промышленность,Ruby,A1,10,600.0
+606,Software Engineer,23,0.8,Нижний Новгород,MBA,Junior,Медицина,C++,C1,4,158.5
+607,Data Scientist,23,2.9,Волгоград,PhD,Junior,E-commerce,Java,C1,2,226.6
+608,Product Manager,37,12.4,Новосибирск,Магистр,Lead,Образование,Swift,C2,13,600.0
+609,DevOps Engineer,39,10.3,Пермь,Магистр,Senior,Телеком,JavaScript,B2,11,555.1
+610,Software Engineer,24,2.4,Москва,Бакалавр,Junior,Образование,JavaScript,B2,2,133.9
+611,Backend Developer,32,6.7,Самара,Бакалавр,Middle,Финтех,Ruby,B1,9,295.9
+612,System Administrator,40,15.3,Волгоград,PhD,Lead,Медицина,Python,A2,12,600.0
+613,Security Engineer,32,17.0,Волгоград,PhD,Architect,Госсектор,Swift,A1,14,600.0
+614,Python Developer,44,18.4,Воронеж,Магистр,Architect,IT,Kotlin,C1,15,600.0
+615,Full Stack Developer,36,6.8,Ростов-на-Дону,Бакалавр,Middle,Госсектор,C++,A1,6,328.8
+616,Data Analyst,28,5.9,Краснодар,Бакалавр,Middle,IT,Go,A1,7,252.1
+617,Frontend Developer,26,4.5,Волгоград,Бакалавр,Middle,IT,PHP,B1,4,250.7
+618,Security Engineer,36,10.1,Нижний Новгород,PhD,Senior,Госсектор,Java,B2,8,600.0
+619,Machine Learning Engineer,26,4.4,Пермь,Магистр,Middle,Образование,Ruby,B1,6,334.2
+620,Frontend Developer,37,15.2,Нижний Новгород,Бакалавр,Lead,Телеком,Go,A2,15,600.0
+621,Project Manager,34,16.1,Санкт-Петербург,PhD,Architect,Госсектор,JavaScript,C2,16,600.0
+622,QA Engineer,37,12.7,Казань,Среднее,Lead,E-commerce,Ruby,A1,13,525.2
+623,Backend Developer,35,10.1,Казань,Бакалавр,Senior,Финтех,Java,C1,10,468.5
+624,Python Developer,30,9.5,Волгоград,Магистр,Senior,Финтех,C++,B2,9,491.1
+625,Data Scientist,38,14.6,Воронеж,Бакалавр,Lead,Финтех,PHP,C2,13,600.0
+626,Data Analyst,42,14.1,Пермь,Бакалавр,Lead,Ритейл,JavaScript,B2,11,600.0
+627,Project Manager,21,1.9,Самара,Магистр,Junior,Финтех,C++,C1,3,220.1
+628,Security Engineer,31,8.3,Москва,Бакалавр,Senior,IT,C++,C1,8,454.7
+629,Data Scientist,22,3.5,Краснодар,Магистр,Junior,Образование,Ruby,C2,5,171.6
+630,Data Scientist,44,19.1,Самара,Бакалавр,Architect,Медицина,Java,B2,19,600.0
+631,Machine Learning Engineer,40,13.1,Самара,PhD,Lead,Ритейл,Kotlin,B1,11,600.0
+632,Machine Learning Engineer,38,12.3,Екатеринбург,Магистр,Lead,E-commerce,PHP,A2,11,600.0
+633,Machine Learning Engineer,40,12.6,Казань,PhD,Lead,Ритейл,Go,B1,12,600.0
+634,Data Scientist,43,16.9,Санкт-Петербург,Бакалавр,Architect,IT,JavaScript,A1,17,600.0
+635,QA Engineer,32,12.0,Новосибирск,PhD,Lead,IT,PHP,C1,12,600.0
+636,Project Manager,28,8.0,Ростов-на-Дону,Бакалавр,Middle,Промышленность,Kotlin,A2,6,424.8
+637,Full Stack Developer,31,8.1,Уфа,PhD,Senior,Финтех,Ruby,C2,9,600.0
+638,Security Engineer,19,0.8,Пермь,Магистр,Junior,IT,PHP,A2,3,181.8
+639,Python Developer,31,10.7,Казань,PhD,Senior,Образование,C#,A2,12,600.0
+640,QA Engineer,35,13.9,Ростов-на-Дону,Бакалавр,Lead,E-commerce,Swift,A1,12,600.0
+641,Project Manager,34,9.6,Екатеринбург,Бакалавр,Senior,Промышленность,PHP,C2,7,535.2
+642,Machine Learning Engineer,40,13.1,Самара,Среднее,Lead,Телеком,PHP,A1,14,600.0
+643,Product Manager,24,0.7,Ростов-на-Дону,MBA,Junior,Промышленность,Ruby,B2,1,203.8
+644,Product Manager,20,5.2,Пермь,Бакалавр,Middle,Образование,C++,A2,4,280.6
+645,Software Engineer,31,4.3,Воронеж,Магистр,Middle,Госсектор,C#,A2,7,304.2
+646,Frontend Developer,29,3.9,Краснодар,Магистр,Junior,Финтех,Ruby,C1,5,196.5
+647,Backend Developer,29,2.2,Самара,MBA,Junior,IT,PHP,B2,3,235.5
+648,Project Manager,42,16.0,Самара,Бакалавр,Architect,Телеком,Swift,B2,16,600.0
+649,Python Developer,27,2.9,Санкт-Петербург,Магистр,Junior,Госсектор,C++,B1,3,166.4
+650,Data Analyst,30,9.0,Пермь,Магистр,Senior,Образование,Kotlin,A1,9,449.0
+651,Product Manager,33,12.5,Краснодар,PhD,Lead,Образование,C++,B1,12,600.0
+652,Data Scientist,42,20.0,Москва,Магистр,Architect,Госсектор,Ruby,A2,16,600.0
+653,Security Engineer,32,10.2,Пермь,Бакалавр,Senior,IT,JavaScript,A1,11,501.2
+654,Project Manager,26,5.7,Воронеж,Магистр,Middle,Ритейл,Go,C2,5,386.1
+655,Security Engineer,39,13.2,Казань,Магистр,Lead,E-commerce,Java,A2,12,600.0
+656,Machine Learning Engineer,44,19.4,Волгоград,Бакалавр,Architect,Телеком,Python,B2,15,600.0
+657,Security Engineer,24,5.1,Краснодар,Бакалавр,Middle,IT,Python,C1,5,276.5
+658,Full Stack Developer,35,9.8,Пермь,PhD,Senior,Финтех,C#,A1,8,597.7
+659,Full Stack Developer,25,2.3,Воронеж,MBA,Junior,Финтех,JavaScript,B2,3,216.0
+660,System Administrator,30,4.1,Краснодар,PhD,Middle,E-commerce,Kotlin,A1,7,269.9
+661,Backend Developer,34,10.2,Пермь,MBA,Senior,Телеком,C#,C1,8,597.6
+662,Software Engineer,25,2.2,Казань,Бакалавр,Junior,Медицина,Python,C1,1,212.6
+663,Python Developer,25,0.7,Самара,Среднее,Junior,Образование,C++,C1,4,140.7
+664,Python Developer,31,6.8,Нижний Новгород,Бакалавр,Middle,Образование,C#,C1,8,258.8
+665,Full Stack Developer,32,8.7,Ростов-на-Дону,Магистр,Senior,E-commerce,PHP,B1,9,518.4
+666,Python Developer,43,18.3,Волгоград,Бакалавр,Architect,Ритейл,C#,A2,14,600.0
+667,Security Engineer,32,6.4,Казань,Бакалавр,Middle,Ритейл,Python,A1,9,327.1
+668,Full Stack Developer,31,7.6,Воронеж,Бакалавр,Middle,Телеком,PHP,B2,9,329.3
+669,Full Stack Developer,22,2.2,Волгоград,Бакалавр,Junior,Промышленность,PHP,A1,1,198.3
+670,Machine Learning Engineer,36,6.5,Нижний Новгород,Магистр,Middle,Финтех,Kotlin,B2,8,384.5
+671,Full Stack Developer,33,9.0,Ростов-на-Дону,PhD,Senior,Финтех,Ruby,C1,7,600.0
+672,Backend Developer,32,4.9,Ростов-на-Дону,Бакалавр,Middle,Финтех,Kotlin,C2,6,279.6
+673,Data Scientist,23,2.2,Самара,Бакалавр,Junior,Образование,Kotlin,C2,2,206.8
+674,Project Manager,39,11.4,Пермь,Магистр,Senior,Госсектор,PHP,B2,13,597.7
+675,DevOps Engineer,25,3.5,Уфа,Среднее,Junior,Промышленность,Ruby,C1,5,130.4
+676,Backend Developer,41,11.3,Самара,Магистр,Senior,Госсектор,C#,A1,11,600.0
+677,Full Stack Developer,26,6.3,Самара,PhD,Middle,E-commerce,Kotlin,C2,8,371.1
+678,Python Developer,29,7.4,Санкт-Петербург,Среднее,Middle,IT,Swift,C2,7,280.3
+679,Python Developer,50,18.6,Пермь,Среднее,Architect,Телеком,Go,A2,14,600.0
+680,Software Engineer,23,3.5,Волгоград,PhD,Junior,IT,Go,C1,4,221.8
+681,QA Engineer,41,15.8,Уфа,Среднее,Lead,Промышленность,Swift,A2,14,567.5
+682,DevOps Engineer,35,13.5,Ростов-на-Дону,Бакалавр,Lead,E-commerce,Kotlin,B1,10,600.0
+683,Software Engineer,44,17.1,Ростов-на-Дону,Магистр,Architect,Госсектор,Swift,C1,15,600.0
+684,Software Engineer,35,12.0,Пермь,Бакалавр,Senior,Госсектор,Python,B1,9,519.5
+685,Frontend Developer,28,6.1,Самара,PhD,Middle,Образование,Java,C2,7,340.3
+686,System Administrator,26,6.6,Волгоград,Бакалавр,Middle,Медицина,C++,B2,5,330.0
+687,QA Engineer,34,15.7,Москва,Бакалавр,Lead,Телеком,Python,C1,16,600.0
+688,System Administrator,22,2.4,Самара,Бакалавр,Junior,Промышленность,Python,A1,3,140.4
+689,Frontend Developer,36,11.5,Самара,Бакалавр,Senior,Ритейл,C++,C2,12,522.2
+690,Machine Learning Engineer,46,14.3,Санкт-Петербург,MBA,Lead,IT,JavaScript,C2,12,600.0
+691,Frontend Developer,28,6.2,Нижний Новгород,PhD,Middle,Образование,JavaScript,B1,8,347.0
+692,Project Manager,41,19.4,Новосибирск,Среднее,Architect,E-commerce,Ruby,A1,16,600.0
+693,Python Developer,30,2.6,Ростов-на-Дону,Магистр,Junior,E-commerce,PHP,C2,3,171.6
+694,Cloud Architect,18,2.0,Волгоград,Бакалавр,Junior,Образование,Java,A1,1,200.3
+695,Backend Developer,29,6.9,Москва,Магистр,Middle,Ритейл,C#,A1,8,291.7
+696,QA Engineer,32,6.8,Воронеж,Бакалавр,Middle,Ритейл,Java,A2,5,226.8
+697,Machine Learning Engineer,35,9.8,Самара,PhD,Senior,Финтех,PHP,A2,8,600.0
+698,Security Engineer,36,9.9,Новосибирск,Бакалавр,Senior,Ритейл,C++,A1,7,501.2
+699,Security Engineer,44,18.1,Пермь,Бакалавр,Architect,Образование,PHP,C2,16,600.0
+700,DevOps Engineer,34,11.5,Самара,Магистр,Senior,Телеком,Kotlin,C2,13,586.1
+701,Product Manager,26,3.6,Нижний Новгород,Магистр,Junior,Ритейл,Kotlin,C2,3,200.1
+702,Python Developer,37,11.0,Уфа,MBA,Senior,Медицина,Python,B1,9,600.0
+703,Machine Learning Engineer,34,9.6,Нижний Новгород,Бакалавр,Senior,IT,Python,B1,9,591.8
+704,Security Engineer,40,19.1,Нижний Новгород,PhD,Architect,Промышленность,Kotlin,C2,18,600.0
+705,Software Engineer,40,11.2,Нижний Новгород,Магистр,Senior,Медицина,Java,A2,8,529.1
+706,Python Developer,45,18.7,Волгоград,Бакалавр,Architect,Медицина,PHP,C2,14,600.0
+707,System Administrator,27,5.2,Москва,Бакалавр,Middle,Телеком,Java,A2,5,266.5
+708,Cloud Architect,24,5.1,Краснодар,Магистр,Middle,Медицина,Java,C1,8,429.3
+709,Frontend Developer,26,5.4,Пермь,Магистр,Middle,E-commerce,Swift,C1,8,307.4
+710,DevOps Engineer,25,4.9,Уфа,Магистр,Middle,Медицина,C++,A1,7,343.3
+711,Machine Learning Engineer,40,13.5,Пермь,Бакалавр,Lead,Образование,JavaScript,C2,13,600.0
+712,Cloud Architect,36,13.4,Москва,PhD,Lead,IT,Java,B2,10,600.0
+713,Python Developer,34,10.0,Москва,Бакалавр,Senior,Ритейл,Python,A2,8,526.9
+714,Cloud Architect,38,10.6,Самара,Бакалавр,Senior,E-commerce,JavaScript,B1,9,599.2
+715,Full Stack Developer,37,7.6,Самара,PhD,Middle,IT,Python,A1,9,392.6
+716,Full Stack Developer,29,7.0,Воронеж,Магистр,Middle,Госсектор,PHP,B1,9,420.1
+717,Cloud Architect,23,1.2,Волгоград,Бакалавр,Junior,Финтех,Kotlin,C1,3,192.7
+718,Cloud Architect,23,5.1,Казань,Магистр,Middle,Телеком,Ruby,B2,5,410.8
+719,Machine Learning Engineer,32,8.5,Волгоград,PhD,Senior,Телеком,Ruby,A2,6,600.0
+720,Cloud Architect,45,15.6,Ростов-на-Дону,Среднее,Lead,Финтех,Go,A1,12,600.0
+721,Project Manager,40,15.2,Ростов-на-Дону,Бакалавр,Lead,Телеком,Swift,C1,13,600.0
+722,Software Engineer,23,3.0,Екатеринбург,Магистр,Junior,E-commerce,C#,A1,6,184.9
+723,Python Developer,30,5.2,Екатеринбург,Бакалавр,Middle,Финтех,Swift,C1,7,254.5
+724,Backend Developer,36,8.5,Пермь,Магистр,Senior,Промышленность,Go,C2,8,570.4
+725,System Administrator,33,9.9,Пермь,Среднее,Senior,Медицина,PHP,A2,8,388.9
+726,QA Engineer,29,6.8,Нижний Новгород,Магистр,Middle,Промышленность,Swift,A1,5,223.1
+727,Machine Learning Engineer,27,2.7,Уфа,Магистр,Junior,Госсектор,C#,B1,2,221.7
+728,Data Scientist,42,14.8,Екатеринбург,PhD,Lead,Телеком,Ruby,B1,15,600.0
+729,Data Analyst,44,18.1,Ростов-на-Дону,Бакалавр,Architect,Госсектор,C++,B1,14,600.0
+730,Product Manager,45,19.5,Воронеж,Бакалавр,Architect,Ритейл,Kotlin,A1,18,600.0
+731,Machine Learning Engineer,40,14.1,Казань,Магистр,Lead,Госсектор,JavaScript,B1,14,600.0
+732,Security Engineer,37,13.5,Нижний Новгород,PhD,Lead,IT,JavaScript,C2,10,600.0
+733,DevOps Engineer,43,19.7,Казань,Магистр,Architect,Финтех,Go,C2,19,600.0
+734,DevOps Engineer,29,10.0,Москва,Бакалавр,Senior,Образование,Kotlin,A2,8,532.5
+735,Product Manager,40,15.4,Пермь,Магистр,Lead,Образование,PHP,A1,12,600.0
+736,Data Analyst,24,2.0,Ростов-на-Дону,PhD,Junior,Промышленность,JavaScript,A2,3,123.2
+737,Python Developer,34,8.9,Екатеринбург,PhD,Senior,IT,Swift,A2,9,546.1
+738,Data Scientist,30,3.5,Санкт-Петербург,Среднее,Junior,IT,Go,C2,6,166.0
+739,Data Analyst,45,19.0,Волгоград,Магистр,Architect,Ритейл,Go,A2,17,600.0
+740,Project Manager,38,18.9,Воронеж,PhD,Architect,Медицина,Ruby,A1,18,600.0
+741,DevOps Engineer,39,16.7,Казань,Бакалавр,Architect,IT,Java,B1,17,600.0
+742,Machine Learning Engineer,30,10.2,Краснодар,MBA,Senior,Промышленность,Kotlin,C2,12,600.0
+743,Product Manager,36,9.4,Воронеж,Магистр,Senior,Финтех,Swift,C1,11,600.0
+744,QA Engineer,38,12.8,Новосибирск,Среднее,Lead,Телеком,C++,C1,12,499.1
+745,Software Engineer,43,13.8,Воронеж,Магистр,Lead,IT,Python,C2,12,600.0
+746,Security Engineer,32,8.8,Самара,Среднее,Senior,Госсектор,Python,B1,9,470.5
+747,Project Manager,29,5.4,Екатеринбург,Бакалавр,Middle,E-commerce,C++,B1,8,291.8
+748,QA Engineer,24,7.0,Воронеж,PhD,Middle,Медицина,C++,A2,9,356.3
+749,Machine Learning Engineer,27,4.0,Новосибирск,Бакалавр,Middle,Образование,C#,B2,6,291.9
+750,DevOps Engineer,35,10.8,Пермь,Бакалавр,Senior,IT,Kotlin,B1,12,600.0
+751,Machine Learning Engineer,33,10.6,Ростов-на-Дону,MBA,Senior,Телеком,Ruby,C1,10,600.0
+752,DevOps Engineer,38,13.2,Краснодар,Бакалавр,Lead,E-commerce,Swift,C1,12,600.0
+753,Python Developer,46,19.2,Пермь,Бакалавр,Architect,Телеком,Go,A1,19,600.0
+754,Machine Learning Engineer,40,12.5,Уфа,Магистр,Lead,Ритейл,C++,A2,9,600.0
+755,Cloud Architect,21,0.7,Уфа,Магистр,Junior,E-commerce,PHP,C1,0,216.5
+756,System Administrator,40,16.2,Краснодар,Магистр,Architect,IT,PHP,C1,13,600.0
+757,Frontend Developer,42,17.4,Санкт-Петербург,MBA,Architect,IT,C#,C2,13,600.0
+758,DevOps Engineer,29,5.4,Краснодар,Бакалавр,Middle,Финтех,Ruby,A2,8,304.8
+759,Security Engineer,35,7.1,Новосибирск,Бакалавр,Middle,Промышленность,Swift,A2,6,317.8
+760,Data Scientist,34,7.4,Нижний Новгород,Магистр,Middle,IT,Java,A1,9,407.4
+761,Frontend Developer,37,15.9,Екатеринбург,Бакалавр,Lead,Ритейл,Java,C2,13,600.0
+762,QA Engineer,40,19.2,Уфа,Магистр,Architect,Медицина,JavaScript,A2,17,600.0
+763,Data Analyst,37,10.8,Новосибирск,Бакалавр,Senior,Образование,PHP,C2,9,381.5
+764,Full Stack Developer,42,14.6,Новосибирск,Среднее,Lead,Медицина,Go,A2,14,600.0
+765,DevOps Engineer,34,12.6,Новосибирск,PhD,Lead,Образование,C++,A1,12,600.0
+766,Backend Developer,22,0.5,Пермь,Бакалавр,Junior,Госсектор,Python,A1,1,126.3
+767,Software Engineer,43,16.9,Самара,MBA,Architect,Ритейл,PHP,B1,17,600.0
+768,QA Engineer,26,6.0,Ростов-на-Дону,PhD,Middle,Телеком,Swift,C2,8,284.1
+769,Security Engineer,25,6.6,Ростов-на-Дону,Бакалавр,Middle,Промышленность,C#,B1,5,294.4
+770,Data Analyst,37,11.5,Санкт-Петербург,Магистр,Senior,Финтех,Swift,A1,12,460.8
+771,System Administrator,47,15.1,Санкт-Петербург,PhD,Lead,Телеком,Ruby,C2,14,600.0
+772,Project Manager,18,1.0,Краснодар,Бакалавр,Junior,Госсектор,Go,A1,4,160.7
+773,DevOps Engineer,37,9.9,Москва,PhD,Senior,IT,PHP,B1,9,600.0
+774,Product Manager,38,14.5,Ростов-на-Дону,Магистр,Lead,Госсектор,C#,A1,15,600.0
+775,Software Engineer,25,1.1,Санкт-Петербург,Магистр,Junior,Промышленность,PHP,B1,4,163.0
+776,DevOps Engineer,36,11.8,Нижний Новгород,Магистр,Senior,Промышленность,Python,B2,10,600.0
+777,Python Developer,33,11.6,Новосибирск,Магистр,Senior,Медицина,Swift,B1,9,567.3
+778,Python Developer,25,5.9,Казань,Среднее,Middle,Телеком,Java,A1,7,273.5
+779,Product Manager,27,5.9,Пермь,Магистр,Middle,E-commerce,Java,A2,5,373.3
+780,Python Developer,23,0.6,Воронеж,Среднее,Junior,Промышленность,Python,B1,2,137.8
+781,Backend Developer,26,3.3,Уфа,Бакалавр,Junior,Образование,PHP,C2,5,138.4
+782,Data Analyst,38,14.9,Москва,Бакалавр,Lead,Медицина,JavaScript,A2,14,600.0
+783,Software Engineer,41,9.2,Краснодар,PhD,Senior,Ритейл,C++,C1,8,560.5
+784,Full Stack Developer,34,12.7,Волгоград,Магистр,Lead,Образование,Go,A1,14,600.0
+785,QA Engineer,30,5.0,Ростов-на-Дону,Магистр,Middle,Промышленность,Go,B2,4,289.7
+786,Full Stack Developer,35,10.0,Самара,Магистр,Senior,E-commerce,Python,B2,10,592.9
+787,Project Manager,38,14.7,Волгоград,Среднее,Lead,Образование,Swift,A2,15,600.0
+788,Frontend Developer,45,19.8,Санкт-Петербург,Бакалавр,Architect,IT,Java,B2,15,600.0
+789,Software Engineer,22,5.0,Санкт-Петербург,Магистр,Middle,Телеком,JavaScript,A1,5,384.6
+790,Full Stack Developer,43,14.7,Екатеринбург,Бакалавр,Lead,Финтех,C++,A1,11,600.0
+791,Cloud Architect,34,4.5,Волгоград,Бакалавр,Middle,E-commerce,Java,A2,3,421.4
+792,Project Manager,34,9.6,Самара,Бакалавр,Senior,Ритейл,C++,A1,11,522.3
+793,Full Stack Developer,40,15.9,Воронеж,Бакалавр,Lead,Телеком,PHP,A1,16,600.0
+794,QA Engineer,29,6.2,Санкт-Петербург,Бакалавр,Middle,Медицина,Kotlin,A2,7,215.6
+795,Cloud Architect,33,6.3,Волгоград,Бакалавр,Middle,Финтех,JavaScript,C2,5,368.5
+796,DevOps Engineer,23,4.9,Нижний Новгород,Среднее,Middle,E-commerce,Java,C1,6,214.6
+797,Cloud Architect,29,8.2,Нижний Новгород,Магистр,Senior,E-commerce,C++,C1,8,600.0
+798,Product Manager,43,18.0,Краснодар,Бакалавр,Architect,Телеком,Java,B1,14,600.0
+799,System Administrator,33,9.8,Воронеж,Бакалавр,Senior,E-commerce,PHP,C2,9,407.1
+800,Cloud Architect,21,1.5,Нижний Новгород,Бакалавр,Junior,Медицина,Ruby,B2,1,197.4
+801,Full Stack Developer,46,18.8,Екатеринбург,Магистр,Architect,Образование,C++,C2,15,600.0
+802,Full Stack Developer,32,12.1,Нижний Новгород,Магистр,Lead,Ритейл,Go,A2,13,600.0
+803,Software Engineer,23,3.7,Новосибирск,PhD,Junior,Телеком,JavaScript,B2,6,182.0
+804,QA Engineer,42,12.3,Волгоград,Бакалавр,Lead,Промышленность,Ruby,B2,10,567.7
+805,DevOps Engineer,47,19.6,Самара,Среднее,Architect,Телеком,Java,B1,19,600.0
+806,System Administrator,29,7.4,Воронеж,Бакалавр,Middle,Промышленность,Java,B1,9,257.4
+807,DevOps Engineer,36,9.9,Пермь,Магистр,Senior,Финтех,Go,C1,7,599.7
+808,Data Scientist,22,2.8,Санкт-Петербург,PhD,Junior,IT,Swift,C2,5,198.2
+809,QA Engineer,23,2.5,Екатеринбург,Среднее,Junior,IT,JavaScript,A1,3,98.3
+810,System Administrator,24,8.3,Самара,PhD,Senior,Телеком,C#,A2,7,566.3
+811,Machine Learning Engineer,27,7.1,Воронеж,PhD,Middle,Финтех,PHP,C2,9,526.8
+812,Machine Learning Engineer,28,5.3,Москва,Бакалавр,Middle,Финтех,Ruby,A1,5,357.8
+813,QA Engineer,36,14.2,Новосибирск,PhD,Lead,Ритейл,Go,A1,13,600.0
+814,Software Engineer,47,19.2,Нижний Новгород,Бакалавр,Architect,Телеком,C#,A1,18,600.0
+815,Full Stack Developer,19,2.9,Москва,Бакалавр,Junior,Медицина,Ruby,A1,3,129.6
+816,QA Engineer,29,5.2,Санкт-Петербург,Бакалавр,Middle,Ритейл,Go,A2,4,217.6
+817,Full Stack Developer,33,7.5,Самара,Магистр,Middle,Медицина,Ruby,C2,6,362.5
+818,Backend Developer,49,17.3,Самара,Магистр,Architect,IT,Java,B2,17,600.0
+819,DevOps Engineer,37,16.4,Самара,Магистр,Architect,Госсектор,JavaScript,C2,17,600.0
+820,Project Manager,18,0.9,Санкт-Петербург,Бакалавр,Junior,Телеком,Go,A1,2,167.3
+821,Frontend Developer,36,13.7,Ростов-на-Дону,PhD,Lead,Финтех,Java,A2,13,600.0
+822,Backend Developer,49,19.4,Самара,Бакалавр,Architect,E-commerce,Go,B1,15,600.0
+823,QA Engineer,32,7.8,Уфа,Магистр,Middle,E-commerce,C++,B1,10,270.6
+824,DevOps Engineer,36,10.2,Краснодар,Бакалавр,Senior,Госсектор,Swift,A1,8,596.2
+825,Full Stack Developer,46,16.2,Москва,Бакалавр,Architect,Промышленность,Swift,C2,15,600.0
+826,Python Developer,37,14.7,Нижний Новгород,PhD,Lead,IT,Kotlin,B2,12,600.0
+827,Data Scientist,28,7.0,Новосибирск,Магистр,Middle,IT,Go,B1,7,378.3
+828,Data Scientist,29,2.7,Екатеринбург,Бакалавр,Junior,Телеком,JavaScript,A2,2,209.5
+829,Data Analyst,45,18.6,Волгоград,Магистр,Architect,Госсектор,C#,A2,15,600.0
+830,Data Scientist,24,2.4,Нижний Новгород,Бакалавр,Junior,Медицина,Go,B1,3,198.6
+831,Cloud Architect,23,6.6,Новосибирск,PhD,Middle,IT,Go,A2,8,503.9
+832,Data Scientist,38,13.7,Новосибирск,Бакалавр,Lead,Медицина,C#,B1,14,600.0
+833,Full Stack Developer,40,18.5,Уфа,Бакалавр,Architect,E-commerce,PHP,C1,14,600.0
+834,Cloud Architect,35,12.1,Самара,Среднее,Lead,Ритейл,Ruby,C1,10,600.0
+835,DevOps Engineer,31,15.0,Краснодар,Среднее,Lead,E-commerce,PHP,A1,15,600.0
+836,Full Stack Developer,40,16.3,Екатеринбург,Магистр,Architect,Финтех,C#,A2,16,600.0
+837,DevOps Engineer,25,1.9,Волгоград,Магистр,Junior,Телеком,JavaScript,A1,2,162.9
+838,QA Engineer,25,5.6,Новосибирск,Бакалавр,Middle,Телеком,Java,B1,6,228.1
+839,QA Engineer,48,19.7,Воронеж,PhD,Architect,Медицина,Ruby,A1,17,600.0
+840,Full Stack Developer,28,4.1,Уфа,PhD,Middle,Телеком,C#,B2,6,286.8
+841,Cloud Architect,43,15.0,Москва,Магистр,Lead,Финтех,PHP,B1,15,600.0
+842,Frontend Developer,41,15.8,Уфа,Среднее,Lead,Телеком,Go,B2,12,600.0
+843,Data Scientist,38,13.1,Нижний Новгород,Бакалавр,Lead,Ритейл,C#,C1,10,600.0
+844,Software Engineer,40,16.3,Пермь,Магистр,Architect,IT,Go,A1,14,600.0
+845,Security Engineer,32,9.3,Воронеж,Магистр,Senior,Промышленность,Kotlin,B1,8,600.0
+846,Machine Learning Engineer,22,3.6,Пермь,Среднее,Junior,Ритейл,Go,B2,2,160.4
+847,Product Manager,22,2.3,Уфа,Магистр,Junior,Промышленность,C++,C2,1,206.3
+848,Cloud Architect,33,7.7,Краснодар,Бакалавр,Middle,Образование,C++,C2,10,364.7
+849,Frontend Developer,24,1.8,Пермь,MBA,Junior,Медицина,Ruby,B1,3,170.5
+850,Cloud Architect,45,15.6,Воронеж,Бакалавр,Lead,Медицина,Kotlin,C2,15,600.0
+851,Data Analyst,24,2.8,Воронеж,Среднее,Junior,Медицина,Java,B2,5,100.7
+852,Cloud Architect,19,1.9,Новосибирск,Магистр,Junior,Телеком,JavaScript,A1,1,228.3
+853,System Administrator,45,18.9,Уфа,MBA,Architect,IT,Ruby,C1,19,600.0
+854,Backend Developer,43,16.2,Екатеринбург,Среднее,Architect,Промышленность,JavaScript,B2,15,600.0
+855,Project Manager,39,14.2,Волгоград,MBA,Lead,Образование,Swift,B2,15,600.0
+856,Full Stack Developer,39,15.4,Ростов-на-Дону,Бакалавр,Lead,E-commerce,Ruby,A1,12,600.0
+857,Product Manager,37,11.3,Пермь,Магистр,Senior,Госсектор,Python,C1,13,600.0
+858,Data Analyst,30,6.1,Санкт-Петербург,Магистр,Middle,E-commerce,Swift,C1,8,241.2
+859,DevOps Engineer,30,7.5,Воронеж,Магистр,Middle,Медицина,Kotlin,A1,6,328.5
+860,Frontend Developer,40,13.8,Самара,Магистр,Lead,Медицина,C#,A1,11,600.0
+861,Frontend Developer,34,9.7,Нижний Новгород,PhD,Senior,Медицина,PHP,B2,9,559.5
+862,Cloud Architect,28,7.8,Самара,Бакалавр,Middle,Медицина,C#,C2,6,370.7
+863,Project Manager,25,5.5,Самара,Магистр,Middle,Медицина,Ruby,C1,7,383.0
+864,Frontend Developer,26,6.6,Пермь,MBA,Middle,Образование,C#,A2,7,341.8
+865,Software Engineer,26,1.7,Ростов-на-Дону,Бакалавр,Junior,Ритейл,Python,A2,1,135.3
+866,Frontend Developer,32,11.0,Ростов-на-Дону,Магистр,Senior,IT,C#,A1,12,512.1
+867,Backend Developer,32,8.4,Воронеж,PhD,Senior,Ритейл,Swift,C2,9,539.8
+868,Data Analyst,36,13.0,Уфа,MBA,Lead,Госсектор,Java,C2,11,600.0
+869,Product Manager,47,15.3,Новосибирск,PhD,Lead,Финтех,Swift,B1,15,600.0
+870,DevOps Engineer,40,16.8,Москва,Бакалавр,Architect,Госсектор,Go,C1,14,600.0
+871,System Administrator,30,6.1,Казань,Магистр,Middle,Медицина,PHP,C1,5,292.5
+872,System Administrator,29,11.3,Пермь,Магистр,Senior,E-commerce,C#,B1,12,499.3
+873,QA Engineer,22,4.9,Санкт-Петербург,Магистр,Middle,E-commerce,Kotlin,C1,4,262.2
+874,Machine Learning Engineer,32,8.5,Новосибирск,Среднее,Senior,Медицина,Ruby,A2,10,444.0
+875,Full Stack Developer,27,4.7,Краснодар,Магистр,Middle,Медицина,Java,C1,6,299.9
+876,System Administrator,42,16.3,Краснодар,Магистр,Architect,Образование,Go,C2,16,600.0
+877,Full Stack Developer,32,4.2,Самара,Среднее,Middle,E-commerce,Go,A1,4,282.0
+878,Full Stack Developer,43,12.0,Пермь,PhD,Senior,Образование,Python,C2,9,600.0
+879,System Administrator,37,15.0,Казань,PhD,Lead,E-commerce,JavaScript,A2,15,600.0
+880,QA Engineer,43,17.0,Пермь,Магистр,Architect,E-commerce,Python,C2,14,600.0
+881,Software Engineer,40,13.5,Уфа,Бакалавр,Lead,Ритейл,PHP,B2,11,600.0
+882,Full Stack Developer,30,9.9,Санкт-Петербург,Бакалавр,Senior,E-commerce,Ruby,C2,9,466.6
+883,Product Manager,30,10.3,Новосибирск,Бакалавр,Senior,Медицина,Go,A2,10,597.0
+884,Backend Developer,30,6.9,Нижний Новгород,Бакалавр,Middle,Образование,Kotlin,B1,8,255.7
+885,Python Developer,24,1.0,Казань,Бакалавр,Junior,Образование,Ruby,C2,3,103.4
+886,Software Engineer,27,5.9,Самара,Бакалавр,Middle,E-commerce,Java,C1,8,290.7
+887,Cloud Architect,26,2.2,Уфа,Магистр,Junior,Финтех,C++,B2,2,298.3
+888,DevOps Engineer,34,10.4,Нижний Новгород,Бакалавр,Senior,Промышленность,Ruby,A2,11,467.7
+889,Data Analyst,29,6.0,Пермь,Магистр,Middle,Медицина,Python,A1,6,257.2
+890,Frontend Developer,39,15.3,Казань,Магистр,Lead,E-commerce,Go,A1,13,600.0
+891,Product Manager,34,13.3,Екатеринбург,Магистр,Lead,Финтех,Python,A1,14,600.0
+892,DevOps Engineer,28,5.2,Нижний Новгород,Магистр,Middle,Телеком,C#,A1,5,327.3
+893,Python Developer,35,14.0,Краснодар,Среднее,Lead,Промышленность,Swift,C2,14,600.0
+894,Security Engineer,41,12.5,Краснодар,Бакалавр,Lead,IT,JavaScript,C1,12,600.0
+895,System Administrator,32,9.1,Уфа,Среднее,Senior,Медицина,Swift,B2,10,358.9
+896,Security Engineer,42,16.7,Москва,Бакалавр,Architect,Телеком,PHP,C2,13,600.0
+897,Frontend Developer,46,18.9,Ростов-на-Дону,Магистр,Architect,Госсектор,PHP,B2,17,600.0
+898,QA Engineer,31,8.8,Казань,Бакалавр,Senior,Ритейл,Swift,B1,9,365.6
+899,Software Engineer,31,3.6,Нижний Новгород,Бакалавр,Junior,Госсектор,C++,A2,5,182.7
+900,Data Scientist,32,13.0,Нижний Новгород,Бакалавр,Lead,Образование,Ruby,B1,14,600.0
+901,Cloud Architect,40,19.7,Самара,Среднее,Architect,Госсектор,C++,A2,19,600.0
+902,Frontend Developer,31,4.7,Волгоград,Магистр,Middle,IT,Swift,A1,7,268.3
+903,Frontend Developer,34,10.9,Волгоград,Магистр,Senior,Медицина,Go,C2,8,544.6
+904,Python Developer,39,11.3,Уфа,Бакалавр,Senior,E-commerce,Swift,A1,11,462.3
+905,Product Manager,29,13.9,Пермь,Магистр,Lead,Образование,Ruby,B2,14,600.0
+906,Frontend Developer,44,15.9,Санкт-Петербург,Магистр,Lead,Госсектор,Python,A1,16,600.0
+907,Python Developer,31,10.9,Москва,Магистр,Senior,IT,Swift,B1,8,538.7
+908,System Administrator,26,2.3,Краснодар,Магистр,Junior,Медицина,Java,B2,3,171.4
+909,DevOps Engineer,25,2.5,Екатеринбург,Бакалавр,Junior,Госсектор,Ruby,A2,5,179.0
+910,Machine Learning Engineer,47,16.7,Уфа,Магистр,Architect,Образование,Kotlin,A1,16,600.0
+911,Backend Developer,37,8.8,Санкт-Петербург,Магистр,Senior,Промышленность,C++,A2,10,488.4
+912,QA Engineer,31,6.5,Уфа,Магистр,Middle,Телеком,PHP,B2,9,255.2
+913,Backend Developer,27,5.4,Нижний Новгород,Бакалавр,Middle,E-commerce,C#,B1,8,309.4
+914,Data Analyst,41,14.9,Москва,Бакалавр,Lead,Образование,JavaScript,B1,15,600.0
+915,Software Engineer,28,8.3,Пермь,Бакалавр,Senior,Ритейл,Swift,B2,10,460.6
+916,Project Manager,46,16.4,Санкт-Петербург,Бакалавр,Architect,Промышленность,Ruby,C2,14,600.0
+917,Python Developer,40,16.1,Москва,Магистр,Architect,Промышленность,Ruby,B1,15,600.0
+918,Security Engineer,34,8.3,Москва,Бакалавр,Senior,Госсектор,Ruby,C1,6,508.9
+919,System Administrator,44,14.5,Краснодар,Бакалавр,Lead,Медицина,C#,B2,14,600.0
+920,QA Engineer,46,15.6,Самара,Бакалавр,Lead,Образование,Kotlin,A2,15,600.0
+921,QA Engineer,32,10.5,Самара,Бакалавр,Senior,Финтех,Ruby,A1,9,418.2
+922,QA Engineer,37,16.5,Казань,Бакалавр,Architect,Финтех,Python,B2,13,600.0
+923,Software Engineer,24,2.6,Воронеж,MBA,Junior,Промышленность,Kotlin,A1,6,252.3
+924,Python Developer,24,3.1,Новосибирск,Магистр,Junior,Образование,C#,B2,2,141.3
+925,QA Engineer,35,12.0,Волгоград,Бакалавр,Lead,IT,C#,A1,11,600.0
+926,Software Engineer,49,16.7,Екатеринбург,Бакалавр,Architect,E-commerce,PHP,B2,15,600.0
+927,Security Engineer,35,11.6,Нижний Новгород,Бакалавр,Senior,E-commerce,Java,C2,10,533.7
+928,Machine Learning Engineer,35,11.9,Волгоград,Магистр,Senior,E-commerce,Go,C2,11,600.0
+929,DevOps Engineer,36,10.9,Самара,Бакалавр,Senior,E-commerce,Swift,A1,11,491.5
+930,Machine Learning Engineer,38,15.3,Санкт-Петербург,Бакалавр,Lead,Госсектор,C#,B2,14,600.0
+931,Machine Learning Engineer,33,10.5,Уфа,Бакалавр,Senior,Телеком,Swift,B1,12,526.4
+932,Cloud Architect,44,17.6,Екатеринбург,Бакалавр,Architect,Телеком,Swift,C2,16,600.0
+933,System Administrator,37,10.4,Самара,Среднее,Senior,Финтех,C#,C1,10,520.4
+934,QA Engineer,36,13.7,Екатеринбург,Бакалавр,Lead,Госсектор,PHP,A1,13,600.0
+935,System Administrator,35,10.5,Екатеринбург,Магистр,Senior,Финтех,PHP,A2,11,494.5
+936,System Administrator,52,19.4,Екатеринбург,Магистр,Architect,IT,C++,A1,17,600.0
+937,Cloud Architect,27,5.5,Екатеринбург,Магистр,Middle,Образование,Ruby,B1,4,459.2
+938,Backend Developer,41,14.4,Волгоград,Бакалавр,Lead,Медицина,PHP,B1,11,600.0
+939,Data Scientist,37,12.5,Нижний Новгород,Среднее,Lead,Промышленность,Ruby,A2,12,600.0
+940,Cloud Architect,37,14.1,Санкт-Петербург,Бакалавр,Lead,Госсектор,C#,C2,15,600.0
+941,Security Engineer,32,7.2,Ростов-на-Дону,Бакалавр,Middle,Образование,C++,A1,7,319.7
+942,Backend Developer,41,17.2,Пермь,Бакалавр,Architect,Госсектор,Kotlin,A1,17,600.0
+943,Data Analyst,39,14.8,Санкт-Петербург,Магистр,Lead,Образование,Java,A2,14,600.0
+944,QA Engineer,34,11.8,Воронеж,Магистр,Senior,Финтех,Java,C2,10,481.9
+945,System Administrator,23,6.3,Краснодар,PhD,Middle,Образование,Kotlin,A2,7,331.9
+946,Frontend Developer,34,11.8,Екатеринбург,Бакалавр,Senior,Промышленность,Go,A1,11,518.2
+947,Full Stack Developer,19,0.9,Москва,Бакалавр,Junior,Образование,Go,C2,0,176.3
+948,DevOps Engineer,23,4.4,Волгоград,Магистр,Middle,E-commerce,Ruby,C1,4,314.6
+949,Data Scientist,34,5.7,Пермь,Магистр,Middle,Образование,Swift,C1,4,404.7
+950,Product Manager,35,11.4,Волгоград,Бакалавр,Senior,Госсектор,Go,A1,9,600.0
+951,Frontend Developer,38,14.1,Санкт-Петербург,Магистр,Lead,Образование,Swift,A2,14,600.0
+952,Security Engineer,36,6.7,Казань,Бакалавр,Middle,IT,Kotlin,A1,9,290.0
+953,Python Developer,30,7.2,Волгоград,MBA,Middle,Телеком,C++,C1,7,409.3
+954,Backend Developer,42,14.6,Самара,PhD,Lead,E-commerce,JavaScript,C1,11,600.0
+955,Data Analyst,33,3.6,Воронеж,Магистр,Junior,Образование,Go,B2,6,159.7
+956,Python Developer,35,10.2,Пермь,Магистр,Senior,IT,Go,C2,9,583.4
+957,Frontend Developer,45,19.0,Волгоград,Магистр,Architect,Медицина,Python,A1,16,600.0
+958,QA Engineer,34,13.0,Самара,Бакалавр,Lead,Финтех,Go,C1,12,600.0
+959,Frontend Developer,29,7.5,Волгоград,Бакалавр,Middle,E-commerce,Swift,B1,5,264.4
+960,DevOps Engineer,29,7.2,Уфа,Бакалавр,Middle,E-commerce,Kotlin,B2,6,262.8
+961,Cloud Architect,35,14.2,Самара,PhD,Lead,Образование,C++,C2,12,600.0
+962,Data Scientist,37,11.9,Уфа,Среднее,Senior,IT,Kotlin,B2,10,521.9
+963,Project Manager,31,6.6,Самара,Магистр,Middle,Образование,Kotlin,B1,5,340.4
+964,Backend Developer,28,7.1,Уфа,Бакалавр,Middle,Госсектор,Kotlin,A2,9,284.6
+965,Data Scientist,29,8.2,Краснодар,Бакалавр,Senior,Промышленность,Swift,B2,8,449.7
+966,System Administrator,21,4.9,Уфа,Бакалавр,Middle,IT,Ruby,A2,4,228.3
+967,System Administrator,29,5.3,Волгоград,Бакалавр,Middle,Образование,Java,A1,8,238.8
+968,Machine Learning Engineer,34,11.5,Казань,Среднее,Senior,Финтех,PHP,B1,13,600.0
+969,Cloud Architect,28,6.2,Новосибирск,PhD,Middle,Промышленность,Java,A2,5,456.2
+970,Data Analyst,31,10.3,Краснодар,Магистр,Senior,Образование,Python,C1,10,567.3
+971,Frontend Developer,27,6.1,Краснодар,PhD,Middle,E-commerce,C#,B2,5,312.1
+972,Data Scientist,31,5.8,Пермь,Магистр,Middle,IT,Kotlin,C1,4,345.0
+973,Product Manager,33,8.2,Пермь,Магистр,Senior,Телеком,C++,A2,10,600.0
+974,DevOps Engineer,28,6.9,Санкт-Петербург,Среднее,Middle,E-commerce,Kotlin,A2,7,271.4
+975,Python Developer,41,16.8,Уфа,Магистр,Architect,Медицина,Java,B1,14,600.0
+976,DevOps Engineer,21,2.7,Пермь,Магистр,Junior,IT,Go,C2,4,192.4
+977,Security Engineer,26,7.4,Нижний Новгород,Бакалавр,Middle,Образование,JavaScript,C1,6,319.3
+978,Machine Learning Engineer,30,5.8,Казань,Магистр,Middle,Промышленность,PHP,C2,8,353.0
+979,Data Analyst,26,4.5,Новосибирск,Магистр,Middle,Финтех,C#,C2,6,237.9
+980,Full Stack Developer,30,10.4,Самара,Среднее,Senior,Госсектор,Swift,C1,11,463.2
+981,Security Engineer,27,6.5,Новосибирск,Магистр,Middle,IT,Go,B2,8,379.3
+982,Python Developer,29,4.3,Воронеж,MBA,Middle,Промышленность,JavaScript,B1,3,336.4
+983,Full Stack Developer,21,1.4,Воронеж,PhD,Junior,Промышленность,Swift,C1,2,225.8
+984,Machine Learning Engineer,30,10.9,Пермь,Бакалавр,Senior,Ритейл,Python,C1,11,599.9
+985,QA Engineer,36,8.9,Санкт-Петербург,Среднее,Senior,Ритейл,C++,C1,7,352.7
+986,Security Engineer,36,14.4,Ростов-на-Дону,Магистр,Lead,Медицина,JavaScript,C2,14,600.0
+987,Software Engineer,43,15.9,Санкт-Петербург,Магистр,Lead,Промышленность,PHP,C2,15,600.0
+988,Project Manager,30,6.2,Самара,Магистр,Middle,Образование,C++,C1,5,365.4
+989,Security Engineer,34,9.8,Самара,Магистр,Senior,Госсектор,Python,C1,10,600.0
+990,Frontend Developer,25,1.5,Екатеринбург,Бакалавр,Junior,Образование,Kotlin,C2,3,120.4
+991,Cloud Architect,28,2.8,Нижний Новгород,Среднее,Junior,Образование,Ruby,A1,5,173.4
+992,Product Manager,35,11.7,Москва,Бакалавр,Senior,Ритейл,C#,A1,13,578.8
+993,Backend Developer,37,16.2,Ростов-на-Дону,Бакалавр,Architect,E-commerce,Kotlin,A2,15,600.0
+994,Backend Developer,25,4.6,Москва,Бакалавр,Middle,Промышленность,PHP,A2,3,263.3
+995,Data Scientist,33,11.5,Воронеж,Бакалавр,Senior,Финтех,PHP,A2,13,558.1
+996,DevOps Engineer,27,2.5,Новосибирск,Среднее,Junior,Образование,Swift,C2,4,164.8
+997,QA Engineer,47,18.4,Нижний Новгород,Бакалавр,Architect,Промышленность,PHP,A1,17,600.0
+998,Machine Learning Engineer,32,9.7,Уфа,Бакалавр,Senior,IT,C#,A1,8,510.5
+999,System Administrator,38,12.9,Краснодар,PhD,Lead,Финтех,Python,A1,13,600.0
+1000,Full Stack Developer,48,19.1,Волгоград,Среднее,Architect,Промышленность,Python,B2,19,600.0
