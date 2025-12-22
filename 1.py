@@ -168,16 +168,6 @@ class SalaryPredictorApp(QMainWindow):
         self.feature_encoder = {}
         self.setup_demo_data()
 
-        # Настройка стиля
-        self.setup_styles()
-
-        # Инициализация данных
-        self.salary_data = None
-        self.salary_model = None
-        self.scaler = StandardScaler()
-        self.feature_encoder = {}
-        self.setup_demo_data()
-
         # Главный виджет
         self.central_widget = QWidget()
         self.setCentralWidget(self.central_widget)
@@ -186,35 +176,22 @@ class SalaryPredictorApp(QMainWindow):
         # Заголовок
         self.title_label = QLabel("💰 AI Salary Predictor - Система Предсказания Зарплат")
         self.title_label.setStyleSheet("""
-            font-size: 28px;
-            font-weight: bold;
-            color: #4fc3f7;
-            padding: 15px;
+            font-size: 32px;
+            font-weight: 700;
+            color: #ffffff;
+            padding: 25px;
             text-align: center;
-            background: linear-gradient(90deg, #1a1a2e, #16213e);
-            border-radius: 10px;
-            margin: 5px;
+            background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                stop:0 #667eea, stop:0.5 #764ba2, stop:1 #667eea);
+            border-radius: 15px;
+            margin: 8px;
+            border: 3px solid #a78bfa;
         """)
         self.main_layout.addWidget(self.title_label)
 
         # Вкладки
         self.notebook = QTabWidget()
-        self.notebook.setStyleSheet("""
-            QTabBar::tab {
-                padding: 12px 25px;
-                font-size: 14px;
-                font-weight: bold;
-                background: #2d2d44;
-                margin-right: 2px;
-            }
-            QTabBar::tab:selected {
-                background: #4fc3f7;
-                color: #000000;
-            }
-            QTabBar::tab:hover {
-                background: #3d3d5c;
-            }
-        """)
+        # Стили вкладок уже применены в setup_styles, но можно добавить дополнительные эффекты
         self.main_layout.addWidget(self.notebook)
 
         # Инициализация вкладок
@@ -246,121 +223,272 @@ class SalaryPredictorApp(QMainWindow):
         """Настройка стилей приложения"""
         dark_stylesheet = """
             QMainWindow {
-                background-color: #1a1a2e;
+                background: qlineargradient(x1:0, y1:0, x2:0, y2:1, 
+                    stop:0 #0f0c29, stop:1 #302b63);
             }
             QWidget {
-                background-color: #1a1a2e;
-                color: #e0e0e0;
-                font-family: 'Segoe UI', Arial;
-            }
-            QTabWidget::pane {
-                border: 1px solid #2d2d44;
-                background-color: #1a1a2e;
-                border-radius: 8px;
-            }
-            QPushButton {
-                background-color: #2d2d44;
-                color: #ffffff;
-                border: 1px solid #3d3d5c;
-                padding: 10px;
-                border-radius: 6px;
-                font-weight: bold;
+                background-color: transparent;
+                color: #f0f0f0;
+                font-family: 'Segoe UI', 'Microsoft YaHei', Arial;
                 font-size: 13px;
             }
+            QTabWidget::pane {
+                border: 2px solid #4a5568;
+                background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                    stop:0 #1a202c, stop:1 #2d3748);
+                border-radius: 12px;
+                padding: 5px;
+            }
+            QTabBar::tab {
+                background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                    stop:0 #2d3748, stop:1 #1a202c);
+                color: #cbd5e0;
+                padding: 12px 28px;
+                margin-right: 4px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                font-weight: 600;
+                font-size: 14px;
+                min-width: 120px;
+            }
+            QTabBar::tab:selected {
+                background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                    stop:0 #667eea, stop:1 #764ba2);
+                color: #ffffff;
+                border: 2px solid #8b5cf6;
+                border-bottom: none;
+            }
+            QTabBar::tab:hover:!selected {
+                background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                    stop:0 #4a5568, stop:1 #2d3748);
+                color: #ffffff;
+            }
+            QPushButton {
+                background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                    stop:0 #4a5568, stop:1 #2d3748);
+                color: #ffffff;
+                border: 2px solid #667eea;
+                padding: 12px 20px;
+                border-radius: 8px;
+                font-weight: 600;
+                font-size: 13px;
+                min-height: 20px;
+            }
             QPushButton:hover {
-                background-color: #3d3d5c;
-                border: 1px solid #4fc3f7;
+                background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                    stop:0 #667eea, stop:1 #764ba2);
+                border: 2px solid #8b5cf6;
+                transform: translateY(-1px);
             }
             QPushButton:pressed {
-                background-color: #1e6f9f;
+                background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                    stop:0 #5a67d8, stop:1 #6b46c1);
+                border: 2px solid #7c3aed;
             }
             QPushButton#AccentButton {
-                background-color: #2196f3;
-                border: 1px solid #2196f3;
+                background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                    stop:0 #4299e1, stop:1 #3182ce);
+                border: 2px solid #63b3ed;
+                color: #ffffff;
             }
             QPushButton#AccentButton:hover {
-                background-color: #1976d2;
+                background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                    stop:0 #3182ce, stop:1 #2c5282);
+                border: 2px solid #90cdf4;
             }
             QPushButton#SuccessButton {
-                background-color: #4caf50;
-                border: 1px solid #4caf50;
+                background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                    stop:0 #48bb78, stop:1 #38a169);
+                border: 2px solid #68d391;
+                color: #ffffff;
             }
             QPushButton#SuccessButton:hover {
-                background-color: #388e3c;
+                background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                    stop:0 #38a169, stop:1 #2f855a);
+                border: 2px solid #9ae6b4;
             }
             QPushButton#WarningButton {
-                background-color: #ff9800;
-                border: 1px solid #ff9800;
-                color: #000000;
+                background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                    stop:0 #ed8936, stop:1 #dd6b20);
+                border: 2px solid #f6ad55;
+                color: #ffffff;
             }
             QPushButton#WarningButton:hover {
-                background-color: #f57c00;
+                background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                    stop:0 #dd6b20, stop:1 #c05621);
+                border: 2px solid #fbb360;
             }
             QLabel {
-                color: #e0e0e0;
+                color: #e2e8f0;
                 font-size: 13px;
             }
             QLineEdit, QComboBox, QTextEdit, QSpinBox, QDoubleSpinBox {
-                background-color: #2d2d44;
-                border: 1px solid #3d3d5c;
-                padding: 8px;
-                border-radius: 4px;
+                background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                    stop:0 #2d3748, stop:1 #1a202c);
+                border: 2px solid #4a5568;
+                padding: 10px;
+                border-radius: 8px;
                 color: #ffffff;
                 font-size: 13px;
+                selection-background-color: #667eea;
+            }
+            QLineEdit:focus, QComboBox:focus, QTextEdit:focus, 
+            QSpinBox:focus, QDoubleSpinBox:focus {
+                border: 2px solid #8b5cf6;
+                background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                    stop:0 #374151, stop:1 #1f2937);
+            }
+            QComboBox::drop-down {
+                border: none;
+                width: 30px;
+            }
+            QComboBox::down-arrow {
+                image: none;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 6px solid #cbd5e0;
+                width: 0;
+                height: 0;
+            }
+            QComboBox QAbstractItemView {
+                background-color: #2d3748;
+                border: 2px solid #667eea;
+                border-radius: 8px;
+                selection-background-color: #667eea;
+                selection-color: #ffffff;
             }
             QGroupBox {
-                border: 2px solid #2d2d44;
-                border-radius: 8px;
-                margin-top: 15px;
-                padding-top: 15px;
-                font-weight: bold;
-                color: #4fc3f7;
-                background-color: #16213e;
+                border: 2px solid #667eea;
+                border-radius: 12px;
+                margin-top: 20px;
+                padding-top: 20px;
+                font-weight: 700;
+                font-size: 14px;
+                color: #a78bfa;
+                background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                    stop:0 rgba(102, 126, 234, 0.1), stop:1 rgba(118, 75, 162, 0.1));
             }
             QGroupBox::title {
                 subcontrol-origin: margin;
-                left: 15px;
-                padding: 0 10px;
-                background-color: #16213e;
+                left: 20px;
+                padding: 0 12px;
+                background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                    stop:0 #0f0c29, stop:1 #302b63);
             }
             QSlider::groove:horizontal {
-                height: 8px;
-                background: #2d2d44;
-                border-radius: 4px;
+                height: 10px;
+                background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                    stop:0 #2d3748, stop:1 #4a5568);
+                border-radius: 5px;
             }
             QSlider::handle:horizontal {
-                background: #2196f3;
-                width: 20px;
-                height: 20px;
-                margin: -6px 0;
-                border-radius: 10px;
+                background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                    stop:0 #8b5cf6, stop:1 #667eea);
+                width: 24px;
+                height: 24px;
+                margin: -7px 0;
+                border-radius: 12px;
+                border: 2px solid #a78bfa;
+            }
+            QSlider::handle:horizontal:hover {
+                background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                    stop:0 #a78bfa, stop:1 #8b5cf6);
             }
             QTableWidget {
-                background-color: #2d2d44;
-                border: 1px solid #3d3d5c;
-                gridline-color: #3d3d5c;
-                border-radius: 4px;
+                background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                    stop:0 #2d3748, stop:1 #1a202c);
+                border: 2px solid #4a5568;
+                gridline-color: #4a5568;
+                border-radius: 10px;
+                alternate-background-color: rgba(102, 126, 234, 0.1);
             }
             QTableWidget::item {
-                padding: 5px;
+                padding: 8px;
+                border: none;
+            }
+            QTableWidget::item:selected {
+                background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                    stop:0 #667eea, stop:1 #764ba2);
+                color: #ffffff;
             }
             QHeaderView::section {
-                background-color: #2d2d44;
-                padding: 8px;
-                border: 1px solid #3d3d5c;
-                font-weight: bold;
+                background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                    stop:0 #4a5568, stop:1 #2d3748);
+                padding: 10px;
+                border: 1px solid #667eea;
+                font-weight: 700;
+                color: #e2e8f0;
             }
             QProgressBar {
-                border: 1px solid #3d3d5c;
-                border-radius: 4px;
+                border: 2px solid #4a5568;
+                border-radius: 8px;
                 text-align: center;
+                background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                    stop:0 #2d3748, stop:1 #1a202c);
+                color: #ffffff;
+                font-weight: 600;
             }
             QProgressBar::chunk {
-                background-color: #4fc3f7;
-                border-radius: 4px;
+                background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                    stop:0 #667eea, stop:1 #764ba2);
+                border-radius: 6px;
+            }
+            QScrollBar:vertical {
+                background: #2d3748;
+                width: 14px;
+                border-radius: 7px;
+            }
+            QScrollBar::handle:vertical {
+                background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                    stop:0 #667eea, stop:1 #764ba2);
+                border-radius: 7px;
+                min-height: 30px;
+            }
+            QScrollBar::handle:vertical:hover {
+                background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                    stop:0 #8b5cf6, stop:1 #a78bfa);
+            }
+            QScrollBar:horizontal {
+                background: #2d3748;
+                height: 14px;
+                border-radius: 7px;
+            }
+            QScrollBar::handle:horizontal {
+                background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                    stop:0 #667eea, stop:1 #764ba2);
+                border-radius: 7px;
+                min-width: 30px;
+            }
+            QScrollBar::handle:horizontal:hover {
+                background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                    stop:0 #8b5cf6, stop:1 #a78bfa);
+            }
+            QStatusBar {
+                background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                    stop:0 #1a202c, stop:1 #2d3748);
+                color: #cbd5e0;
+                border-top: 2px solid #667eea;
+                font-weight: 500;
             }
         """
         self.setStyleSheet(dark_stylesheet)
+
+    def setup_matplotlib_style(self, fig):
+        """Настройка красивого стиля для matplotlib графиков"""
+        fig.patch.set_facecolor('#1a202c')
+        # Устанавливаем темную тему для всех subplots
+        for ax in fig.get_axes():
+            ax.set_facecolor('#2d3748')
+            ax.spines['bottom'].set_color('#667eea')
+            ax.spines['top'].set_color('#667eea')
+            ax.spines['right'].set_color('#667eea')
+            ax.spines['left'].set_color('#667eea')
+            ax.tick_params(colors='#e2e8f0')
+            ax.xaxis.label.set_color('#cbd5e0')
+            ax.yaxis.label.set_color('#cbd5e0')
+            ax.title.set_color('#ffffff')
+            ax.grid(True, alpha=0.2, color='#4a5568', linestyle='--')
+        return fig
 
     def update_time(self):
         """Обновление времени в статус баре"""
@@ -477,10 +605,13 @@ class SalaryPredictorApp(QMainWindow):
         self.data_info_label = QLabel("Загрузите данные о зарплатах")
         self.data_info_label.setWordWrap(True)
         self.data_info_label.setStyleSheet("""
-            padding: 10px;
-            border: 1px solid #3d3d5c;
-            border-radius: 4px;
-            background-color: #2d2d44;
+            padding: 15px;
+            border: 2px solid #667eea;
+            border-radius: 10px;
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                stop:0 rgba(102, 126, 234, 0.15), stop:1 rgba(118, 75, 162, 0.15));
+            color: #e2e8f0;
+            font-size: 14px;
         """)
         load_layout.addWidget(self.data_info_label)
 
@@ -693,17 +824,17 @@ class SalaryPredictorApp(QMainWindow):
 
                 item = QTableWidgetItem(display_value)
 
-                # Цветовое кодирование для числовых значений
+                # Цветовое кодирование для числовых значений с новой цветовой схемой
                 if pd.api.types.is_numeric_dtype(self.salary_data[col]):
                     try:
                         num_val = float(value)
                         if col.lower().find('зарплат') >= 0:
                             if num_val < 100:
-                                item.setBackground(QColor(244, 67, 54, 30))
+                                item.setBackground(QColor(239, 68, 68, 40))  # Красный
                             elif num_val < 200:
-                                item.setBackground(QColor(255, 193, 7, 30))
+                                item.setBackground(QColor(251, 191, 36, 40))  # Желтый
                             else:
-                                item.setBackground(QColor(76, 175, 80, 30))
+                                item.setBackground(QColor(72, 187, 120, 40))  # Зеленый
                     except:
                         pass
 
@@ -801,17 +932,24 @@ class SalaryPredictorApp(QMainWindow):
         fig = Figure(figsize=(12, 10))
         ax = fig.add_subplot(111)
 
-        # Heatmap корреляций
+        # Heatmap корреляций с красивой цветовой схемой
         mask = np.triu(np.ones_like(corr_matrix, dtype=bool))
-        cmap = sns.diverging_palette(230, 20, as_cmap=True)
+        # Используем красивую цветовую палитру, соответствующую теме
+        cmap = sns.diverging_palette(260, 10, as_cmap=True)
 
         sns.heatmap(corr_matrix, mask=mask, cmap=cmap, center=0,
-                    square=True, linewidths=.5, cbar_kws={"shrink": .8},
-                    ax=ax, annot=True, fmt=".2f", annot_kws={"size": 9})
+                    square=True, linewidths=1,
+                    ax=ax, annot=True, fmt=".2f", annot_kws={"size": 9, "color": "#ffffff"},
+                    cbar_kws={"shrink": .8, "label": "Корреляция"})
 
-        ax.set_title("Корреляционная матрица числовых признаков", fontsize=16, pad=20)
-        plt.xticks(rotation=45, ha='right')
+        ax.set_title("Корреляционная матрица числовых признаков",
+                     fontsize=18, pad=20, color='#ffffff', weight='bold')
+        plt.xticks(rotation=45, ha='right', color='#e2e8f0')
+        plt.yticks(color='#e2e8f0')
         plt.tight_layout()
+
+        # Применяем темную тему
+        self.setup_matplotlib_style(fig)
 
         # Встраивание графика
         canvas = FigureCanvas(fig)
@@ -1024,7 +1162,15 @@ class SalaryPredictorApp(QMainWindow):
         train_layout.addWidget(self.training_progress)
 
         self.training_status = QLabel("Готов к обучению")
-        self.training_status.setStyleSheet("padding: 10px;")
+        self.training_status.setStyleSheet("""
+            padding: 12px;
+            border-radius: 8px;
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                stop:0 rgba(102, 126, 234, 0.1), stop:1 rgba(118, 75, 162, 0.1));
+            border: 1px solid #667eea;
+            color: #cbd5e0;
+            font-weight: 600;
+        """)
         train_layout.addWidget(self.training_status)
 
         train_group.setLayout(train_layout)
@@ -1651,11 +1797,14 @@ class SalaryPredictorApp(QMainWindow):
         self.prediction_result = QLabel("Здесь появится результат предсказания")
         self.prediction_result.setAlignment(Qt.AlignCenter)
         self.prediction_result.setStyleSheet("""
-            font-size: 16px;
-            padding: 20px;
-            border: 2px dashed #3d3d5c;
-            border-radius: 8px;
-            background-color: #2d2d44;
+            font-size: 20px;
+            font-weight: 700;
+            padding: 30px;
+            border: 3px dashed #8b5cf6;
+            border-radius: 15px;
+            background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                stop:0 rgba(102, 126, 234, 0.2), stop:1 rgba(118, 75, 162, 0.2));
+            color: #ffffff;
         """)
         self.result_layout.addWidget(self.prediction_result)
 
